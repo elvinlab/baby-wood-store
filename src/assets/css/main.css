@@ -72,7 +72,7 @@ a#scrollUp i{
 }
 
 .contactinfo ul li:first-child{
-    margin-left: -15px;
+    margin-left: 10px;
 }
 
 .contactinfo ul li a{
@@ -80,13 +80,15 @@ a#scrollUp i{
   color: #ffff;
   font-family: 'Roboto', sans-serif;
 }
-
+#slogan{
+  margin-inline-end: 10px;
+  text-transform: uppercase;
+  display: inline;
+}
 
 .contactinfo ul li a:hover{
 	background:inherit;
 }
-
-
 .social-icons ul li a {
   border: 0 none;
   border-radius: 0;
@@ -273,7 +275,7 @@ a#scrollUp i{
   background-repeat: no-repeat;
   background-position: 175px;
 }
-.search_box input:before {
+.search_box:before {
   content:'';
   position: absolute;
   top: -2px;
@@ -281,38 +283,20 @@ a#scrollUp i{
   width:0;
   height:0;
   background:transparent;
-  border:2px solid transparent;
+  border:1px solid transparent;
 }
 
-.search_box:hover:before {
-  animation: animate 1s linear forwards;
-}
-@keyframes animate {
-  0%{
-    width: 0;
-    height: 0;
-    border-top-color:#7C6EB0 ;
-    border-right-color:transparent ;
-    border-bottom-color:transparent ;
-    border-left-color:transparent ;
+.search_box:after {
+	content:'';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	width:0;
+	height:0;
+	background:transparent;
+	border:2px solid transparent;
   }
-  50%{
-    width: 100%;
-    height: 0;
-    border-top-color:#7C6EB0 ;
-    border-right-color:#7C6EB0 ;
-    border-bottom-color:transparent ;
-    border-left-color:transparent ;
-  } 
-  100%{
-    width: 100%;
-    height: 100%;
-    border-top-color:#7C6EB0 ;
-    border-right-color:#7C6EB0 ;
-    border-bottom-color:transparent;
-    border-left-color:transparent ;
-  }
-}
+  
 
 /*  Dropdown menu*/
 
@@ -2565,4 +2549,16 @@ h2.title {
   color: #7C6EB0;
 }
 
-
+/* CSS Login Cliente*/
+.btnsocial{
+  color: white;
+  background-color: #7C6EB0;
+  border-radius: 25px;
+  display: inline;
+  margin-left: 10px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.btnsocial:hover{
+  transform: translate(0, -10px);
+}

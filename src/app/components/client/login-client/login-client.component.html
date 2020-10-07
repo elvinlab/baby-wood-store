@@ -1,5 +1,4 @@
 <a (click)="show()" >Iniciar sesión</a>
-
 <!-- Creates the bootstrap modal where the image will appear -->
 <div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog"
   aria-labelledby="myModalLabel" aria-hidden="true">
@@ -10,18 +9,6 @@
       </div>
 
       <div class="modal-body">
-
-        <button type="button" class="btn btn-primary"  (click)="signInWithGoogle()">
-          Google
-        </button>
-
-        <button type="button" class="btn btn-primary"  (click)="signInWithFB()">
-          Facebook
-        </button>
-
-        <button type="button" class="btn btn-primary"  (click)="signOut()">
-          Cerrar sesion
-        </button>
 
         <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
@@ -42,10 +29,24 @@
             </small>
           </div>
 
-          <input type="submit" value="Identificarse" class="btn btn-success" [disabled]="loginForm.invalid"/>
+          <input type="submit" value="Identificarse" class="btn btn-primary" [disabled]="loginForm.invalid"/>
+
+         <button type="button" class="btnsocial pull-right"  (click)="signInWithGoogle()">
+            <i class="fa fa-google-plus"></i>
+          </button>
+          <button type="button" class="btnsocial pull-right"  (click)="signInWithFB()">
+            <i class="fa fa-facebook"></i>
+          </button>
+
+          <a  class="recuperar text-black pull-left" href="url">¿Has Olvidado tu contraseña?</a>
         </form>
       </div>
+      
       <div class="modal-footer">
+        <button type="button" class="btn pull-left"  (click)="signOut()">
+          Cerrar sesion
+        </button>
+
         <button type="button" class="btn btn-dark" data-dismiss="modal" (click)="hide()">
           Cerrar
         </button>

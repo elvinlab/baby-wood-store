@@ -31,7 +31,69 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	     -o-animation-duration: 2s;
 	        animation-duration: 2s;
 }
+/*Animaciones de Baby Wood Team*/
+.search_box:hover:before {
+	animation: animate-search 1s linear forwards;
+  }
 
+  @keyframes animate-search {
+	0%{
+	  width: 0;
+	  height: 0;
+	  border-top-color:#7C6EB0 ;
+	  border-right-color:transparent ;
+	  border-bottom-color:transparent ;
+	  border-left-color:transparent ;
+	}
+	50%{
+	  width: 100%;
+	  height: 0;
+	  border-top-color:#7C6EB0 ;
+	  border-right-color:#7C6EB0 ;
+	  border-bottom-color:transparent ;
+	  border-left-color:transparent ;
+	} 
+	100%{
+	  width: 100%;
+	  height: 100%;
+	  border-top-color:#7C6EB0 ;
+	  border-right-color:#7C6EB0 ;
+	  border-bottom-color:transparent;
+	  border-left-color:transparent ;
+	}
+  }
+  
+  .search_box:hover:after {
+	animation: animate-search2 1s linear forwards;
+	animation-delay: 1s;
+  }
+  @keyframes animate-search2 {
+	0%{
+	  width: 0;
+	  height: 0;
+	  border-top-color:transparent ;
+	  border-right-color:transparent ;
+	  border-bottom-color:transparent ;
+	  border-left-color:#7C6EB0 ;
+	}
+	50%{
+	  width: 0;
+	  height: 100%;
+	  border-top-color:transparent ;
+	  border-right-color:transparent ;
+	  border-bottom-color:#7C6EB0 ;
+	  border-left-color:#7C6EB0 ;
+	} 
+	100%{
+	  width: 100%;
+	  height: 100%;
+	  border-top-color:transparent ;
+	  border-right-color:transparent ;
+	  border-bottom-color:#7C6EB0;
+	  border-left-color:#7C6EB0 ;
+	}
+  }
+  /*Otras animaciones*/
 @-webkit-keyframes flash {
 	0%, 50%, 100% {opacity: 1;}	
 	25%, 75% {opacity: 0;}
