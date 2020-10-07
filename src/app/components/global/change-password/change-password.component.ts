@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { ClientService } from '../../../services/client/client.service';
-import { throwError } from 'rxjs';
 import {ActivatedRoute} from '@angular/router';
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 @Component({
   selector: 'app-change-password',
   templateUrl: './change-password.component.html',
@@ -20,8 +20,8 @@ export class ChangePasswordComponent implements OnInit {
   ) {
     this.changePasswordForm = this.fb.group({
       email: [''],
-      password: ['admin123'],
-      password_confirmation: ['admin123'],
+      password: [''],
+      password_confirmation: [''],
       passwordToken: ['']
     })
     route.queryParams.subscribe((params) => {
@@ -37,26 +37,24 @@ export class ChangePasswordComponent implements OnInit {
     console.log(this.changePasswordForm.value);
     this._clientService.resetPassword(this.changePasswordForm.value).subscribe(
       result => {
-        alert('Password has been updated');
+        console.log(result);
+        Swal.fire({
+          icon: 'success',
+          title: 'Se a cambiado la contraseña exitosamente',
+          text: 'Es un placer tenerte de vuelta',
+        })
+
         this.changePasswordForm.reset();
       },
       error => {
-        this.handleError(error);
+        Swal.fire({
+          icon: 'error',
+          title: error.error.message,
+          text: 'Intentarlo de nuevo',
+        })
       }
     );
   }
 
-  handleError(error) {
-      let errorMessage = '';
-      if (error.error instanceof ErrorEvent) {
-          // client-side error
-          errorMessage = `Error: ${error.error.message}`;
-      } else {
-          // server-side error
-          errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
-      }
-      console.log(errorMessage);
-      return throwError(errorMessage);
-  }
 
 }

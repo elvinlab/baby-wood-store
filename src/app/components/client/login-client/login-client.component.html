@@ -36,7 +36,7 @@
             </small>
           </div>
 
-          <u><p id="contra" href="">¿Has Olvidado tu contraseña?</p></u>
+          <u><p id="contra" [routerLink]="['/restablecer-password']" (click)="hide()">¿Has Olvidado tu contraseña?</p></u>
 
           <input type="submit" value="Identificarse" class="btnLog" [disabled]="loginForm.invalid"/>
 

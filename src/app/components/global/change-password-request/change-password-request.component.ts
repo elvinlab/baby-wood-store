@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { ClientService } from '../../../services/client/client.service';
-
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 @Component({
   selector: 'app-change-password-request',
   templateUrl: './change-password-request.component.html',
@@ -11,9 +11,7 @@ import { ClientService } from '../../../services/client/client.service';
 export class ChangePasswordRequestComponent implements OnInit {
 
   resetForm: FormGroup;
-  errors = null;
-  successMsg = null;
-
+ 
   constructor(
     public fb: FormBuilder,
     private _clientService: ClientService,
@@ -28,10 +26,19 @@ export class ChangePasswordRequestComponent implements OnInit {
   onSubmit(){
     this._clientService.sendResetPasswordLink(this.resetForm.value).subscribe(
       (result) => {
-        this.successMsg = result;
+        console.log(result);
+        Swal.fire({
+          icon: 'success',
+          title:'Se a enviado un link de restablecimiento a su correo',
+          text: 'Revisar correo',
+        })
+
       },(error) => {
-        this.errors = error.error.message;
+        Swal.fire({
+          icon: 'error',
+          title: error.error.message,
+          text: 'Intentarlo de nuevo',
+        })
       })
   }
-
 }
