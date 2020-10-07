@@ -38,4 +38,13 @@ export class ClientService {
 
     return this.http.post(this.baseUrl + 'store/client/login', params, { headers });
   }
+
+  sendResetPasswordLink(data) {
+    return this.http.post('http://127.0.0.1:8000/api/store/client/reset-password-request', data)
+  }
+
+  resetPassword(data) {
+    return this.http.post('http://127.0.0.1:8000/api/store/client/change-password', data)
+  }
+
 }

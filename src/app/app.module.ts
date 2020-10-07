@@ -26,6 +26,8 @@ import { LoginAdministratorComponent } from './components/administrator/login-ad
 import { RegisterAdministratorComponent } from './components/administrator/register-administrator/register-administrator.component';
 import { LoginClientComponent } from './components/client/login-client/login-client.component';
 import { RegisterClientComponent } from './components/client/register-client/register-client.component';
+import { ChangePasswordComponent } from './components/global/change-password/change-password.component';
+import { ChangePasswordRequestComponent } from './components/global/change-password-request/change-password-request.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,8 @@ import { RegisterClientComponent } from './components/client/register-client/reg
     RegisterAdministratorComponent,
     LoginClientComponent,
     RegisterClientComponent,
+    ChangePasswordComponent,
+    ChangePasswordRequestComponent,
   ],
   imports: [
     BrowserModule,
