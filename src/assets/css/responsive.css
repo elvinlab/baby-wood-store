@@ -526,5 +526,13 @@ ul.sub-menu{
 .product-information span span{
 	float: none;
 }
+.btnsocial{
+	margin-left: 100px;
+  margin-right: 100px;
+}
+.btnLog{
+	padding:12px 50px;
+	margin-left: 50px;
+}
 
 }

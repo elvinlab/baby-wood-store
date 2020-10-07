@@ -2550,15 +2550,71 @@ h2.title {
 }
 
 /* CSS Login Cliente*/
-.btnsocial{
-  color: white;
-  background-color: #7C6EB0;
-  border-radius: 25px;
-  display: inline;
-  margin-left: 10px;
-  margin-top: 20px;
-  text-decoration: none;
+.modal-content{
+  background-image: url("../../../../assets/images/icon/fondo-log.jpg");
+  background-size: 1440px;
 }
-.btnsocial:hover{
-  transform: translate(0, -10px);
+
+.modal-title{text-align: center;color: #ffff}
+.form-group{color: #ffff}
+#contra{color: #ffff;text-decoration: underline;}
+#contra:hover{color: #FEC032}
+
+.social-media{
+  display: flex;
+  margin: 30px 0;
+}
+.btnsocial{
+  height: 70px;
+  width: 120px;
+  margin-left: 250px;
+  margin-right: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  transition: .3s linear;
+}
+
+.btnsocial:last-child{
+  margin: 0;
+}
+
+.btnsocial img{
+  width: 20px;
+}
+
+.fb{
+  background: #4267b2;
+  margin-left: 10px;
+}
+
+.google{
+  background: #fff;
+  
+}
+
+.btnLog{
+  border: none;
+  outline: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-left:170px;
+    border: 1px solid #7C6EB0;
+    background-color:#7C6EB0;
+    color:#ffff;
+    font-size:12px;
+    font-weight:bold;
+    padding:12px 80px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    transition: transform 80ms ease-in;
+
+}
+.btnLog:hover{
+  cursor: pointer;
+  background: #8C29C3;
+  color: #ffff;
 }

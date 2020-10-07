@@ -9,7 +9,14 @@
       </div>
 
       <div class="modal-body">
-
+<div class="btnsocial">
+        <button type="button" class="google"  (click)="signInWithGoogle()">
+          <img src="../../../../assets/images/icon/google.png" >
+        </button>
+        <button type="button" class="fb"  (click)="signInWithFB()">
+          <img src="../../../../assets/images/icon/fb.png" >
+        </button>
+      </div>
         <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
             <label for="email">Email</label>
@@ -29,24 +36,15 @@
             </small>
           </div>
 
-          <input type="submit" value="Identificarse" class="btn btn-primary" [disabled]="loginForm.invalid"/>
+          <u><p id="contra" href="">¿Has Olvidado tu contraseña?</p></u>
 
-         <button type="button" class="btnsocial pull-right"  (click)="signInWithGoogle()">
-            <i class="fa fa-google-plus"></i>
-          </button>
-          <button type="button" class="btnsocial pull-right"  (click)="signInWithFB()">
-            <i class="fa fa-facebook"></i>
-          </button>
+          <input type="submit" value="Identificarse" class="btnLog" [disabled]="loginForm.invalid"/>
 
-          <a  class="recuperar text-black pull-left" href="url">¿Has Olvidado tu contraseña?</a>
         </form>
       </div>
       
       <div class="modal-footer">
-        <button type="button" class="btn pull-left"  (click)="signOut()">
-          Cerrar sesion
-        </button>
-
+      
         <button type="button" class="btn btn-dark" data-dismiss="modal" (click)="hide()">
           Cerrar
         </button>
