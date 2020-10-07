@@ -63,12 +63,11 @@ import { RegisterClientComponent } from './components/client/register-client/reg
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider('720440306234-5ia17427jclhgsa6rl76dn9gbf531iuo.apps.googleusercontent.com'),
           },
-            /*
           {
             id: FacebookLoginProvider.PROVIDER_ID,
             provider: new FacebookLoginProvider('1539316096273791'),
           },
-        
+          /*
           {
             id: AmazonLoginProvider.PROVIDER_ID,
             provider: new AmazonLoginProvider(

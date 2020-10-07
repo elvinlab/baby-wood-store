@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Client } from '../../../models/client';
 import { ClientService } from '../../../services/client/client.service';
 import Swal from 'sweetalert2/dist/sweetalert2.js';
-import { SocialAuthService } from "angularx-social-login";
+import {  SocialAuthService } from "angularx-social-login";
 import { FacebookLoginProvider, GoogleLoginProvider } from "angularx-social-login";
 import { SocialUser } from "angularx-social-login";
 
@@ -36,69 +35,109 @@ export class LoginClientComponent implements OnInit {
 
   hide(){ this.showModal = false }
 
-  
-  signInWithGoogle(): void {
+  ngOnInit() {
+
+    this._authService.authState.subscribe((user) => {
+      this.user = user;
+      this.loggedIn = (user != null);
+    });
     
+  }
+
+
+  signInWithFB(): void {
+
     this.submitted = true;
 
-    this._authService.signIn(GoogleLoginProvider.PROVIDER_ID);
-    
-
+    this._authService.signIn(FacebookLoginProvider.PROVIDER_ID);
+ 
     this._authService.authState.subscribe(
       response => {
         console.log(response);
 
         if(this.submitted){ this.showModal = false  }
 
-        this.client = new Client("", response.firstName,  "registerGoogle", response.email, response.id, "", "registerGoogle", "registerGoogle", "registerGoogle");
+        this.client = new Client("", response.firstName,  "registerFacebook", response.email, response.id, "", "registerFacebook", "registerFacebook", "registerFacebook");
 
-        console.log( this.client );
-      this._clientService.register(this.client).subscribe(
-        response => {
+          this._clientService.register(this.client).subscribe(
+            response => {
 
-     
-          if(response.status == 'success'){
-  
-            Swal.fire({
-              icon: 'success',
-              title: 'Bienvenido nuestra familia Baby Wood',
-              text: 'Es un placer que te quedes con nosotros',
-            })
+              if(response.status == 'success'){
+      
+                Swal.fire({
+                  icon: 'success',
+                  title: 'Bienvenido nuestra familia Baby Wood',
+                  text: 'Es un placer que te quedes con nosotros',
+                })
 
-          }
-          
-        },
-        error => {
-     
-          Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: 'Bienvenido de nuevo',
-            showConfirmButton: false,
-            timer: 1500,
-          })
+              }
 
-        }
-    
-      );
+            },
+            error => {
+        
+              Swal.fire({
+                position: 'top',
+                icon: 'success',
+                title: 'Bienvenido de nuevo',
+                showConfirmButton: false,
+                timer: 1500,
+              })
 
-    });
+            }
 
+          );
+   });
 
   }
-  
+ 
+  signInWithGoogle(): void {
+    
+    this.submitted = true;
+
+    this._authService.signIn(GoogleLoginProvider.PROVIDER_ID);
+    
+        this._authService.authState.subscribe(
+          response => {
+            console.log(response);
+
+            if(this.submitted){ this.showModal = false  }
+
+            this.client = new Client("", response.firstName,  "registerGoogle", response.email, response.id, "", "registerGoogle", "registerGoogle", "registerGoogle");
+
+              this._clientService.register(this.client).subscribe(
+                response => {
+
+                  if(response.status == 'success'){
+          
+                    Swal.fire({
+                      icon: 'success',
+                      title: 'Bienvenido nuestra familia Baby Wood',
+                      text: 'Es un placer que te quedes con nosotros',
+                    })
+
+                  }
+
+                },
+                error => {
+            
+                  Swal.fire({
+                    position: 'top',
+                    icon: 'success',
+                    title: 'Bienvenido de nuevo',
+                    showConfirmButton: false,
+                    timer: 1500,
+                  })
+
+                }
+
+              );
+       });
+
+  }
 
   signOut(): void {
     this._authService.signOut();
   }
-
-    ngOnInit() {
-
-      this._authService.authState.subscribe((user) => {
-        this.user = user;
-        this.loggedIn = (user != null);
-      });
-    }
 
  
 
@@ -121,7 +160,7 @@ export class LoginClientComponent implements OnInit {
             if(this.submitted){ this.showModal = false  }
 
               Swal.fire({
-                position: 'top-end',
+                position: 'top',
                 icon: 'success',
                 title: 'Bienvenido de nuevo',
                 showConfirmButton: false,

@@ -10,6 +10,19 @@
       </div>
 
       <div class="modal-body">
+
+        <button type="button" class="btn btn-primary"  (click)="signInWithGoogle()">
+          Google
+        </button>
+
+        <button type="button" class="btn btn-primary"  (click)="signInWithFB()">
+          Facebook
+        </button>
+
+        <button type="button" class="btn btn-primary"  (click)="signOut()">
+          Cerrar sesion
+        </button>
+
         <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
             <label for="email">Email</label>
@@ -35,10 +48,6 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-dark" data-dismiss="modal" (click)="hide()">
           Cerrar
-        </button>
-
-        <button type="button" class="btn btn-primary"  (click)="signInWithGoogle()">
-          Google
         </button>
       </div>
     </div>

@@ -54,7 +54,7 @@ export class LoginAdministratorComponent implements OnInit {
             if(this.submitted){ this.showModal = false  }
 
               Swal.fire({
-                position: 'top-end',
+                position: 'top',
                 icon: 'success',
                 title: 'Bienvenido de nuevo',
                 showConfirmButton: false,
