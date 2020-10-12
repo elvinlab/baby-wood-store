@@ -526,13 +526,21 @@ ul.sub-menu{
 .product-information span span{
 	float: none;
 }
-.btnsocial{
-	margin-left: 100px;
-  margin-right: 100px;
+
+/*Responsive Parte de Login*/
+#contra{
+margin-top: -20px;
+right: 50px;
 }
+
+.btnsocial{
+  margin-left: -10px;
+}
+.btnsocial .social{margin-right: 28px;}
 .btnLog{
 	padding:12px 30px;
 	margin-left: 10px;
 }
+.modal-footer{margin-right: 25px;}
 
 }
