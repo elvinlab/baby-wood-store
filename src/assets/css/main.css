@@ -2554,6 +2554,10 @@ h2.title {
   background-image: url("../../../../assets/images/icon/fondo-log.jpg");
   background-size: 1440px;
 }*/
+.modal-dialog{
+  width: 500px;
+  height: 500px;
+}
 
 .modal-title{text-align: center;color: #7C6EB0}
 
@@ -2590,7 +2594,8 @@ position: relative;
 #contra{
   font-weight: bold;
   position: absolute;
-  right:60px;
+  right:100px;
+  margin-top:-19px;
   color: #8C29C3;
   text-decoration: underline;
 }
@@ -2615,6 +2620,8 @@ position: relative;
   height:auto;
   display:flex;
   justify-content:space-between;
+  
+  margin-right: 80px;
 }
 
  .btnsocial .social button {
@@ -2623,18 +2630,22 @@ position: relative;
   border:none;
   border-radius:30px;
   outline:none;
-  background:#00a2ff;
+  background:#fcbc02;
   color:#FFF;
   cursor:pointer;
-  font-size: 20px;
+}
+.btnsocial .social #mysvg{
+max-width: 30px;
+max-height: 30px;
 }
 
 .btnsocial .social button:first-of-type {
   background:#0066ff;
+  font-size: 20px;
 }
 
 .btnsocial .social button:last-of-type {
-  background:#fcbc02;
+  background:#009925;
 }
 
 

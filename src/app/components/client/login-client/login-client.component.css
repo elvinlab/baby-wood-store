@@ -1,0 +1,125 @@
+.modal-dialog{
+    width: 500px;
+    height: 500px;
+  }
+  
+  .modal-title{text-align: center;color: #7C6EB0}
+  
+  .form-group{
+  width:120%;
+  height:auto;
+  padding:24px 0;
+  margin:10px 0;
+  position: relative;
+  }
+  .form-group .label{
+    width:70%;
+    height:auto;
+    display:flex;
+    justify-content: space-between;
+    position:auto;
+  }
+  .form-group .label i {
+    margin-top:8px;
+    font-size: 20px;
+    color: #7C6EB0;
+  }
+  .form-group  input[type="email"], input[type="password"] {
+      width:100%;
+      height:auto;
+      padding:10px 5px;
+      box-sizing:border-box;
+      background:transparent;
+      border:none;
+      font-size:1.2rem;
+      border-bottom:1px solid #AAA;
+  }
+  
+  #contra{
+    font-weight: bold;
+    position: absolute;
+    right:100px;
+    margin-top:-19px;
+    color: #8C29C3;
+    text-decoration: underline;
+  }
+  #contra:hover{color: #2da1c1}
+  
+  .social-media{
+    display: flex;
+    margin: 30px 0;
+  }
+  .btnsocial{
+    width:100%;
+    height:auto;
+    margin-top:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .btnsocial .social {
+    width:60%;
+    height:auto;
+    display:flex;
+    justify-content:space-between;
+    
+    margin-right: 80px;
+  }
+  
+   .btnsocial .social button {
+    padding:10px 0;
+    width:30%;
+    border:none;
+    border-radius:30px;
+    outline:none;
+    background:#fcbc02;
+    color:#FFF;
+    cursor:pointer;
+  }
+  .btnsocial .social #mysvg{
+  max-width: 30px;
+  max-height: 30px;
+  }
+  
+  .btnsocial .social button:first-of-type {
+    background:#0066ff;
+    font-size: 20px;
+  }
+  
+  .btnsocial .social button:last-of-type {
+    background:#009925;
+  }
+  
+  
+  a {
+    text-decoration:none;
+    color:#0066ff;
+  }
+  
+  
+  .btnLog{
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-left:20px;
+      border: 1px solid #7C6EB0;
+      background-color:#7C6EB0;
+      color:#ffff;
+      font-size:12px;
+      font-weight:bold;
+      padding:12px 40px;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      transition: transform 80ms ease-in;
+  
+  
+  }
+  .btnLog:hover{
+    cursor: pointer;
+    background: #8C29C3;
+    color: #ffff;
+  }
