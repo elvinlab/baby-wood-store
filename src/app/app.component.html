@@ -1,11 +1,23 @@
-<header id="header">
-  <app-header-top></app-header-top>
-  <app-header-middle></app-header-middle>
-  <app-header-bottom></app-header-bottom>
-</header>
+<div *ngIf="!identity || identity.role =='ROLE_CLIENT'" >
 
-  <div class="container">
-    <router-outlet></router-outlet>
-  </div>
-	<br><br>
-<app-footer></app-footer>
+  <header id="header">
+    <app-header-top></app-header-top>
+    <app-header-middle></app-header-middle>
+    <app-header-bottom></app-header-bottom>
+  </header>
+  
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+    <br><br>
+  <app-footer></app-footer>
+
+</div>
+
+
+<div *ngIf="identity && identity.role =='ROLE_ADMINISTRATOR'" >
+  
+  <router-outlet></router-outlet>
+
+</div>
+

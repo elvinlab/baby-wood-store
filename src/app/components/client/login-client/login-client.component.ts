@@ -78,9 +78,9 @@ export class LoginClientComponent implements OnInit {
             this.token = response.token;
             this.identity = response.data;
 
-            localStorage.setItem('token_client', this.token);
+            localStorage.setItem('token', this.token);
             localStorage.setItem(
-              'identity_client',
+              'identity',
               JSON.stringify(this.identity)
             );
 
@@ -88,6 +88,8 @@ export class LoginClientComponent implements OnInit {
               icon: 'success',
               title: 'Hola',
               text: response.message,
+              showConfirmButton: false,
+              timer: 2000,
             });
           }
         },
@@ -133,9 +135,9 @@ export class LoginClientComponent implements OnInit {
             this.token = response.token;
             this.identity = response.data;
 
-            localStorage.setItem('token_client', this.token);
+            localStorage.setItem('token', this.token);
             localStorage.setItem(
-              'identity_client',
+              'identity',
               JSON.stringify(this.identity)
             );
 
@@ -143,6 +145,8 @@ export class LoginClientComponent implements OnInit {
               icon: 'success',
               title: 'Hola',
               text: response.message,
+              showConfirmButton: false,
+              timer: 2000,
             });
           }
         },
@@ -157,10 +161,6 @@ export class LoginClientComponent implements OnInit {
     });
   }
 
-  signOut(): void {
-    this._authService.signOut();
-  }
-
   onSubmit() {
     this.submitted = true;
 
@@ -170,9 +170,9 @@ export class LoginClientComponent implements OnInit {
           this.token = response.token;
           this.identity = response.client;
 
-          localStorage.setItem('token_client', this.token);
+          localStorage.setItem('token', this.token);
           localStorage.setItem(
-            'identity_client',
+            'identity',
             JSON.stringify(this.identity)
           );
 
@@ -185,7 +185,7 @@ export class LoginClientComponent implements OnInit {
             icon: 'success',
             title: 'Bienvenido de nuevo',
             showConfirmButton: false,
-            timer: 1500,
+            timer: 2000,
           });
         } else {
           Swal.fire({
