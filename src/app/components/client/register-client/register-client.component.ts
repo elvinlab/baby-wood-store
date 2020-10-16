@@ -37,6 +37,7 @@ export class RegisterClientComponent implements OnInit {
             icon: 'success',
             title: 'Bienvenido nuestra familia Baby Wood',
             text: 'Es un placer que te quedes con nosotros',
+            
           })
 
           this._router.navigate(['inicio']);

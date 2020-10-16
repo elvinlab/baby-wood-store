@@ -19,6 +19,7 @@ export class LoginClientComponent implements OnInit {
   public client: Client;
   public token: any;
   public identity: any;
+  loading = true;
   showModal: boolean;
   submitted = false;
 
@@ -48,16 +49,13 @@ export class LoginClientComponent implements OnInit {
   }
 
   signInWithFB(): void {
-    this.submitted = true;
-
+  
     this._authService.signIn(FacebookLoginProvider.PROVIDER_ID);
 
     this._authService.authState.subscribe((response) => {
-      console.log(response);
-
-      if (this.submitted) {
-        this.showModal = false;
-      }
+      
+      document.getElementById('loading') 
+      .style.display = 'block'; 
 
       this.client = new Client(
         '',
@@ -73,8 +71,11 @@ export class LoginClientComponent implements OnInit {
 
       this._clientService.register(this.client).subscribe(
         (response) => {
-          console.log(response);
+        
           if (response.status == 'success') {
+
+            this.loading = false;
+
             this.token = response.token;
             this.identity = response.data;
 
@@ -89,7 +90,7 @@ export class LoginClientComponent implements OnInit {
               title: 'Hola',
               text: response.message,
               showConfirmButton: false,
-              timer: 2000,
+              timer: 1500,
             });
           }
         },
@@ -146,7 +147,7 @@ export class LoginClientComponent implements OnInit {
               title: 'Hola',
               text: response.message,
               showConfirmButton: false,
-              timer: 2000,
+              timer: 1500,
             });
           }
         },
@@ -185,7 +186,7 @@ export class LoginClientComponent implements OnInit {
             icon: 'success',
             title: 'Bienvenido de nuevo',
             showConfirmButton: false,
-            timer: 2000,
+            timer: 1500,
           });
         } else {
           Swal.fire({
