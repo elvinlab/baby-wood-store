@@ -1,4 +1,4 @@
-<a (click)="show()" >Iniciar sesión</a>
+<a (click)="show()">Iniciar sesión</a>
 <!-- Creates the bootstrap modal where the image will appear -->
 <div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog"
   aria-labelledby="myModalLabel" aria-hidden="true">
@@ -15,53 +15,55 @@
             <div class="label">
               <label for=""></label>
               <i class="fa fa-user"></i>
-          
-            <input type="email"  class="form-control" name="email" placeholder="  Correo Electronico" #email="ngModel" [(ngModel)]="client.email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-          </div>
+
+              <input type="email" class="form-control" name="email" placeholder="  Correo Electronico" #email="ngModel"
+                [(ngModel)]="client.email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            </div>
             <small *ngIf="!email.valid && email.touched" class="invalid-feedback d-block">
               El correo no es válido
             </small>
           </div>
-      
+
           <div class="form-group">
             <div class="label">
               <label for=""></label>
               <i class="fa fa-lock"></i>
 
-              <input type="password" name="password" class="form-control" placeholder="  Contraseña" #password="ngModel" [(ngModel)]="client.password" required>
-          </div>
-            
+              <input type="password" name="password" class="form-control" placeholder="  Contraseña" #password="ngModel"
+                [(ngModel)]="client.password" required>
+            </div>
+
             <small *ngIf="!password.valid && password.touched" class="invalid-feedback d-block">
               La contraseña no es válida
             </small>
           </div>
 
-          <u><p id="contra" [routerLink]="['/restablecer-password']" (click)="hide()">¿Has olvidado tu contraseña?</p></u>
-         
+          <u>
+            <p id="contra" [routerLink]="['/restablecer-password']" (click)="hide()">¿Has olvidado tu contraseña?</p>
+          </u>
+
           <div class="action-options">
-          <input type="submit" value="Ingresar" class="btnLog" [disabled]="loginForm.invalid"/>
-        </div>
+            <input type="submit" value="Ingresar" class="btnLog" [disabled]="loginForm.invalid" />
+          </div>
+
+        </form>
 
         <div class="btnsocial">
-            <span>
-              Ingresar Con:
+          <span>
+            Ingresar Con:
           </span>
           <div class="social">
-              <button title="facebook" (click)="signInWithFB()"><i class="fa fa-facebook"></i></button>
-             <button title="amazon" >
-              <img src="../../../../assets/images/icon/amazon-brands.svg" id="mysvg">
-              </button> 
-              <button title="Google Plus" (click)="signInWithGoogle()">
-                <img src="../../../../assets/images/icon/google.png" >
-              </button>
+            <button title="facebook" (click)="signInWithFB()"><i class="fa fa-facebook"></i></button>
+            <button title="Google Plus" (click)="signInWithGoogle()">
+              <img src="../../../../assets/images/icon/google.png">
+            </button>
           </div>
         </div>
 
-        </form>
       </div>
-      
+
       <div class="modal-footer">
-      
+
         <button type="button" class="btn btn-dark" data-dismiss="modal" (click)="hide()">
           Cerrar
         </button>
@@ -69,4 +71,3 @@
     </div>
   </div>
 </div>
-
