@@ -3,11 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'; 
 
-import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-login';
+import { SocialAuthServiceConfig } from 'angularx-social-login';
 import {
   GoogleLoginProvider,
   FacebookLoginProvider,
-  //AmazonLoginProvider,
 } from 'angularx-social-login';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -62,7 +61,6 @@ import { ChangePasswordRequestComponent } from './components/global/change-passw
       useValue: {
         autoLogin: false,
         providers: [
-          
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider('720440306234-5ia17427jclhgsa6rl76dn9gbf531iuo.apps.googleusercontent.com'),
@@ -70,15 +68,7 @@ import { ChangePasswordRequestComponent } from './components/global/change-passw
           {
             id: FacebookLoginProvider.PROVIDER_ID,
             provider: new FacebookLoginProvider('1539316096273791'),
-          },
-          /*
-          {
-            id: AmazonLoginProvider.PROVIDER_ID,
-            provider: new AmazonLoginProvider(
-              'clientId'
-            ),
-          },
-          */
+          }
         ],
       } as SocialAuthServiceConfig,
     }
