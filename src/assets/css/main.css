@@ -2578,10 +2578,7 @@ position: relative;
 }
 #contra:hover{color: #2da1c1}
 
-.social-media{
-  display: flex;
-  margin: 30px 0;
-}
+.btnsocial span{color: #8C29C3; margin-left:25px}
 .btnsocial{
   width:100%;
   height:auto;
@@ -2602,34 +2599,25 @@ position: relative;
 }
 
  .btnsocial .social button {
-  padding:10px 0;
+  padding:0;
   width:30%;
   border:none;
   border-radius:30px;
   outline:none;
-  background:#fcbc02;
   color:#FFF;
   cursor:pointer;
-}
-.btnsocial .social #mysvg{
-max-width: 30px;
-max-height: 30px;
 }
 
 .btnsocial .social button:first-of-type {
   background:#0066ff;
   font-size: 20px;
+  margin-left: 100px;
 }
 
 .btnsocial .social button:last-of-type {
   background:#009925;
 }
 
-
-a {
-  text-decoration:none;
-  color:#0066ff;
-}
 
 
 .btnLog{
@@ -2656,3 +2644,4 @@ a {
   background: #8C29C3;
   color: #ffff;
 }
+.modal-footer{margin-right: 70px;}

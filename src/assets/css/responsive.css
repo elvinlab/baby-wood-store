@@ -528,19 +528,33 @@ ul.sub-menu{
 }
 
 /*Responsive Parte de Login*/
+.modal-content{
+	width: 350px;
+	height: 550px;
+	position: relative;
+}
+
 #contra{
 margin-top: -20px;
 right: 50px;
 }
 
 .btnsocial{
-  margin-left: -10px;
+  margin-left: -5px;
 }
-.btnsocial .social{margin-right: 5px;}
+.btnsocial .social{
+	margin-right: 40px;
+	justify-content:space-between;
+	height:auto;
+  display:flex;
+}
+.btnsocial button{
+	width:70%;
+}
 .btnLog{
 	padding:12px 30px;
-	margin-left: 10px;
+	margin-right: 250px;
 }
-.modal-footer{margin-right: 25px;}
+.modal-footer{margin-right: 50px;}
 
 }
