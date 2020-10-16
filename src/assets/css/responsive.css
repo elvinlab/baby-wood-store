@@ -135,7 +135,7 @@
 	float: right;
 }
 
-.header-middle .col-sm-4 {
+.header-middle .col-sm-3 {
 	display: inline-block;
 	overflow: inherit;
 	width: 100%;
@@ -330,7 +330,7 @@ ul.sub-menu{
 	padding: 0;
 }
 
-.header-middle .col-sm-4{
+.header-middle .col-sm-3{
 	text-align: center;
 	overflow: inherit;
 }
