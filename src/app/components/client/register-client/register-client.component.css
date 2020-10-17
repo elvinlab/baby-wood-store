@@ -1,0 +1,128 @@
+.container{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .title{
+      background-color:#7C6EB0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      width: 100%;
+      text-transform: none;
+      margin-bottom: -25px;
+      height: 70px;
+      left: -25px;
+  }
+   
+  .register, .login{
+    flex: 5;
+  }
+   
+  .register{
+    padding: 80px;
+    position: relative;
+  }
+
+   
+  .register input{
+    background-color: #fff;
+    border: 2px solid #7c7cff7c;
+    border-radius: 25px;
+    padding: 15px;
+    font-size:16px;
+  }
+
+  .register .form-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .register .form-row .form-group{
+    width: 48%;
+    float: left;
+  }
+  .register .input-50:focus{
+    border-left: 6px solid rgb(1, 71, 34);
+}
+
+  .register .input-100{
+    width: 100%;
+  }
+  .register .input-100:focus{
+    border-left: 6px solid rgb(1, 71, 34);
+}
+   
+  .register .btn{
+    background-color: #8C29C3;
+    color: #ffffff;
+    margin: auto;
+    padding: 10px;
+    width: 70%;
+    border-radius: 25px;
+    border: 2px solid black;
+  }
+   
+  .register::before{
+    content: 'O';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 50%;
+    left: -23px;
+    padding: 10px;
+    text-align: center;
+    font-size: 19px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow: -1px 1px 3px 1px rgba(0, 0, 0, .2);
+    color: #7c7c7c;
+  }
+   
+  .login{
+    background-image: linear-gradient(to bottom right, #7C6EB0, #e7e7e7);
+    padding: 40px;
+  }
+   
+  .login button i{
+    position: absolute;
+    top: 12px; 
+    left: 12px;
+    font-size: 20px;
+  }
+
+  .login button img{
+    position: absolute;
+    top: 8px; 
+    left: 12px;
+  }
+   
+  .login button{
+    width: 100%;
+    margin: 15px 0px;
+    padding: 10px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+    position: relative;
+  }
+ 
+   
+  .login .fb{
+    background: #3b5999;
+    border-style: none;
+    color: #fff;
+  }
+   
+  .login .gl{
+    background:#009925;
+    border-style: none;
+    color: #fff;
+  }
+   
