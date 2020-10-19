@@ -527,14 +527,6 @@ ul.sub-menu{
 	float: none;
 }
 
-.social-icons .nav{
-	margin-left: -70px;
-}
-
-.search_box .form-control{
-	margin-left: -25px;
-}
-
 /*Responsive Parte de Login*/
 .modal-content{
 	width: 350px;
@@ -565,24 +557,4 @@ right: 50px;
 }
 .modal-footer{margin-right: 50px;}
 
-}
-
-/*Responsive Parte de Registro*/
-.container {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-}
-.login{
-	width: 100%;
-	height: auto;
-}
-.register{
-	width: 100%;
-	height: auto;
-}
-
-  .register .input-50{
-	width: 100%;
-	font-size:10px;
 }

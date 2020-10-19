@@ -35,6 +35,7 @@
     border: 2px solid #7c7cff7c;
     border-radius: 25px;
     padding: 15px;
+    font-size:16px;
   }
 
   .register .form-row{
@@ -46,7 +47,6 @@
   .register .form-row .form-group{
     width: 48%;
     float: left;
-    font-size:16px;
   }
   .register .input-50:focus{
     border-left: 6px solid rgb(1, 71, 34);
@@ -54,7 +54,6 @@
 
   .register .input-100{
     width: 100%;
-    font-size:16px;
   }
   .register .input-100:focus{
     border-left: 6px solid rgb(1, 71, 34);
@@ -88,14 +87,10 @@
   }
    
   .login{
-   /* background-image: url("../../../../assets/images/home/fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;*/
-    background-image: radial-gradient(#7C6EB0,#cfc9e6,white);
-    max-width: 100%;
-    height: 300px;
+    background-image: linear-gradient(to bottom right, #7C6EB0, #e7e7e7);
+    padding: 40px;
   }
-  
+   
   .login button i{
     position: absolute;
     top: 12px; 
