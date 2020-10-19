@@ -24,7 +24,7 @@ export class LoginAdministratorComponent implements OnInit {
     private _administratorService: AdministratorService,
 
     ) { 
-      this.administrator = new Administrator("", "", "", "",  "", "", "", "", "");
+      this.administrator = new Administrator("", "", "", "",  "","");
     }
   
   show(){ this.showModal = true }

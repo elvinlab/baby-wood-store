@@ -30,7 +30,23 @@ export class LoginClientComponent implements OnInit {
     private _authService: SocialAuthService,
     private _clientService: ClientService
   ) {
-    this.client = new Client('', '', '', '', '', '', '', '', '');
+    this.client = new Client(
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      'ROLE_CLIENT'
+    );
   }
 
   show() {
@@ -49,41 +65,38 @@ export class LoginClientComponent implements OnInit {
   }
 
   signInWithFB(): void {
-  
     this._authService.signIn(FacebookLoginProvider.PROVIDER_ID);
 
     this._authService.authState.subscribe((response) => {
-      
-      document.getElementById('loading') 
-      .style.display = 'block'; 
-
+      document.getElementById('loading').style.display = 'block';
+      console.log(response);
       this.client = new Client(
-        '',
+        'id',
         response.firstName,
-        'registerFacebook',
+        response.lastName,
+        'M',
+        '1996',
         response.email,
         response.id,
-        '',
-        'registerFacebook',
-        'registerFacebook',
-        'registerFacebook'
+        'cel',
+        'tel',
+        'country',
+        'province',
+        'city',
+        'postal_code',
+        'street_address',
+        'ROLE_CLIENT'
       );
 
       this._clientService.register(this.client).subscribe(
         (response) => {
-        
           if (response.status == 'success') {
-
             this.loading = false;
-
             this.token = response.token;
             this.identity = response.data;
 
             localStorage.setItem('token', this.token);
-            localStorage.setItem(
-              'identity',
-              JSON.stringify(this.identity)
-            );
+            localStorage.setItem('identity', JSON.stringify(this.identity));
 
             Swal.fire({
               icon: 'success',
@@ -92,6 +105,8 @@ export class LoginClientComponent implements OnInit {
               showConfirmButton: false,
               timer: 1500,
             });
+
+            document.getElementById('loading').style.display = 'none';
           }
         },
 
@@ -101,46 +116,46 @@ export class LoginClientComponent implements OnInit {
             title: error.error.message,
             text: error.error.error,
           });
+          document.getElementById('loading').style.display = 'none';
         }
       );
     });
   }
 
   signInWithGoogle(): void {
-    this.submitted = true;
-
     this._authService.signIn(GoogleLoginProvider.PROVIDER_ID);
 
     this._authService.authState.subscribe((response) => {
+      document.getElementById('loading').style.display = 'block';
       console.log(response);
-
-      if (this.submitted) {
-        this.showModal = false;
-      }
-
       this.client = new Client(
-        '',
+        'id',
         response.firstName,
-        'registerGoogle',
+        response.lastName,
+        'M',
+        '1996',
         response.email,
         response.id,
-        '',
-        'registerGoogle',
-        'registerGoogle',
-        'registerGoogle'
+        'cel',
+        'tel',
+        'country',
+        'province',
+        'city',
+        'postal_code',
+        'street_address',
+        'ROLE_CLIENT'
       );
 
       this._clientService.register(this.client).subscribe(
         (response) => {
           if (response.status == 'success') {
+            this.loading = false;
+
             this.token = response.token;
             this.identity = response.data;
 
             localStorage.setItem('token', this.token);
-            localStorage.setItem(
-              'identity',
-              JSON.stringify(this.identity)
-            );
+            localStorage.setItem('identity', JSON.stringify(this.identity));
 
             Swal.fire({
               icon: 'success',
@@ -151,6 +166,7 @@ export class LoginClientComponent implements OnInit {
             });
           }
         },
+
         (error) => {
           Swal.fire({
             icon: 'error',
@@ -172,10 +188,7 @@ export class LoginClientComponent implements OnInit {
           this.identity = response.client;
 
           localStorage.setItem('token', this.token);
-          localStorage.setItem(
-            'identity',
-            JSON.stringify(this.identity)
-          );
+          localStorage.setItem('identity', JSON.stringify(this.identity));
 
           if (this.submitted) {
             this.showModal = false;

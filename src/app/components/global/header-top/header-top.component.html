@@ -17,7 +17,7 @@
                 <li *ngIf="!identity" ><a [routerLink]="" ><i class="fa fa-lock"></i> <app-login-client></app-login-client> </a></li>
                 <li *ngIf="identity" ><a [routerLink]="" ><i class="fa fa-cogs"></i> Cuenta </a></li>
                 <li *ngIf="identity" ><a [routerLink]="" (click)="signOut()"><i class="fa fa-sign-out"></i> Salir </a></li>
-                <li *ngIf="identity" ><a [routerLink]="" ><i class="fa fa-user"></i> {{ identity.name }} </a></li>
+                <li *ngIf="identity" ><a [routerLink]="" ><i class="fa fa-user"></i> {{ identity.name + ' ' + identity.surname }} </a></li>
               </ul>
             </div>
           </div>
