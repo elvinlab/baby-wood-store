@@ -43,6 +43,20 @@ export class ClientService {
     );
   }
 
+  update(token, client: any): Observable<any> {
+    const json = JSON.stringify(client);
+    const params = `json=${json}`;
+
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/x-www-form-urlencoded',
+      Authorization: `Bearer ${token}`,
+    });
+
+    return this.http.put(this.baseUrl + 'store/client/update', params, {
+      headers,
+    });
+  }
+
   login(client: any, token = null): Observable<any> {
     if (token != null) {
       client.token = 'true';

@@ -1,0 +1,118 @@
+Multiple RouterOutlet<form class="form-horizontal" role="form"  #clientEditForm="ngForm" (ngSubmit)="onSubmit()">
+
+  <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">Nombre</label>
+    <div class="col-sm-10">
+      <input type="name" class="form-control" id="name" placeholder="nombre" name="name" [(ngModel)]="client.name" >
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label for="surname" class="col-sm-2 control-label">Apellido</label>
+    <div class="col-sm-10">
+      <input type="surname" class="form-control" id="surname" placeholder="Apellido" name="surname" [(ngModel)]="client.surname">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="gender" class="col-sm-2 control-label">Genero</label>
+    <div class="col-sm-2">
+      <select class="form-control">
+        <option>F</option>
+        <option>M</option>
+        <option>No aplica</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="birth_year" class="col-sm-2 control-label">Año de nacimiento</label>
+    <div class="col-sm-4">
+
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Elige</mat-label>
+          <input matInput [matDatepicker]="dp3" disabled>
+          <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+          <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+        </mat-form-field>
+      </p>
+
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email" [(ngModel)]="client.email">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Contraseña</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña" name="password" [(ngModel)]="client.password">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="cel" class="col-sm-2 control-label">Telefono Celular</label>
+    <div class="col-sm-10">
+      <input type="cel" class="form-control" id="cel" placeholder="Telefono Celular" name="cel" [(ngModel)]="client.cel">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="tel" class="col-sm-2 control-label">Telefono de casa</label>
+    <div class="col-sm-10">
+      <input type="tel" class="form-control" id="tel" placeholder="Telefono de casa" name="tel" [(ngModel)]="client.tel">
+    </div>
+  </div>
+
+  <h1>Informacion de envio:</h1>
+
+  <div class="form-group">
+    <label for="country" class="col-sm-2 control-label">Pais</label>
+    <div class="col-sm-10">
+      <input type="country" class="form-control" id="country" placeholder="Pais" name="country" [(ngModel)]="client.country">
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label for="province" class="col-sm-2 control-label">Provincia</label>
+    <div class="col-sm-10">
+      <input type="province" class="form-control" id="province" placeholder="Provincia" name="province" [(ngModel)]="client.province">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="city" class="col-sm-2 control-label">Ciudad</label>
+    <div class="col-sm-10">
+      <input type="city" class="form-control" id="city" placeholder="Ciudad" name="city" [(ngModel)]="client.city">
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label for="postal_code" class="col-sm-2 control-label">Codigo Postal</label >
+    <div class="col-sm-10">
+      <input type="postal_code" class="form-control" id="postal_code" placeholder="Codigo Postal" name="postal_code" [(ngModel)]="client.postal_code">
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <label for="street_address" class="col-sm-2 control-label">Direccion Exacta</label>
+    <div class="col-sm-10">
+      <input type="street_address" class="form-control" id="street_address" placeholder="Direccion Exacta" name="street_address" [(ngModel)]="client.street_address">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-primary">Actualizar</button>
+    </div>
+  </div>
+</form>

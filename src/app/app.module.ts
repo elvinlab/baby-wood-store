@@ -27,6 +27,7 @@ import { LoginClientComponent } from './components/client/login-client/login-cli
 import { RegisterClientComponent } from './components/client/register-client/register-client.component';
 import { ChangePasswordComponent } from './components/global/change-password/change-password.component';
 import { ChangePasswordRequestComponent } from './components/global/change-password-request/change-password-request.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { ChangePasswordRequestComponent } from './components/global/change-passw
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
   ],
   providers: [
     {
