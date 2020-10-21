@@ -1,65 +1,65 @@
 <h2 class="title">Registrate a nuestra familia baby wood</h2>
 <div class="container">
-	<div class="login">
-		<h1 class="mb-3">Redes sociales</h1>
-		<div class="login-items">
-		  <button class="fb"><i class="fa fa-facebook"></i> Registrarse con Facebook</button>
-		  <button class="gl">
-			   <img src="../../../../assets/images/icon/google.png" >
-			   Registrarse con Google
-			</button>
-		</div>
-	  </div>
+  <div class="login">
+    <h1 class="mb-3">Redes sociales</h1>
+    <div class="login-items">
+      <button class="fb" (click)="signInWithFB()"><i class="fa fa-facebook" ></i> Registrarse con Facebook</button>
+      <button class="gl" (click)="signInWithGoogle()">
+        <img src="../../../../assets/images/icon/google.png">
+        Registrarse con Google
+      </button>
+    </div>
+  </div>
 
-<div class="register col-md-6 mt-3">
-	<h1 class="mb-3">Crea tu cuenta</h1>
-	<form  #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
-		
-		<div class="form-row ">
-			<div class="form-group ">
-				<label class="font-weight-bold">Nombre <span class="text-danger">*</span></label>
-				<input type="text" name="name" class="input-50" placeholder="Ingrese su nombre" 
-				maxlength="30" #name="ngModel" [(ngModel)]="client.name" required pattern="[a-zA-Z]+">
+  <div class="register col-md-6 mt-3">
+    <h1 class="mb-3">Crea tu cuenta</h1>
+    <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
 
-				<small *ngIf="!name.valid && name.touched" class="invalid-feedback d-block text-danger">
-					El nombre no es válido
-				</small>
-			</div>
-			
-			<div class="form-group">
-				<label class="font-weight-bold">Apellido </label>
-				<input type="text" name="surname" maxlength="30" placeholder="Ingrese su Apellido" 
-				class="input-50" #surname="ngModel" [(ngModel)]="client.surname" required pattern="[a-zA-Z]+">
+      <div class="form-row ">
+        <div class="form-group ">
+          <label class="font-weight-bold">Nombre <span class="text-danger">*</span></label>
+          <input type="text" name="name" class="input-50" placeholder="Ingrese su nombre" maxlength="30" #name="ngModel"
+            [(ngModel)]="client.name" required pattern="[a-zA-Z]+">
 
-				<small *ngIf="!surname.valid && surname.touched" class="invalid-feedback d-block text-danger">
-					Los apellidos no son validos
-				</small>
-			</div>
+          <small *ngIf="!name.valid && name.touched" class="invalid-feedback d-block text-danger">
+            El nombre no es válido
+          </small>
+        </div>
 
-		</div>
+        <div class="form-group">
+          <label class="font-weight-bold">Apellido </label>
+          <input type="text" name="surname" maxlength="30" placeholder="Ingrese su Apellido" class="input-50"
+            #surname="ngModel" [(ngModel)]="client.surname" required pattern="[a-zA-Z]+">
+
+          <small *ngIf="!surname.valid && surname.touched" class="invalid-feedback d-block text-danger">
+            Los apellidos no son validos
+          </small>
+        </div>
+
+      </div>
 
 
-		<div>
-			<label for="email">Email<span class="text-danger">*</span></label><br>
-			<input type="email" name="email" class="input-100" #email="ngModel" [(ngModel)]="client.email" required
-				pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+      <div>
+        <label for="email">Email<span class="text-danger">*</span></label><br>
+        <input type="email" name="email" class="input-100" #email="ngModel" [(ngModel)]="client.email" required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
 
-			<small *ngIf="!email.valid && email.touched" class="invalid-feedback d-block text-danger">
-				El correo no es válido
-			</small>
-		</div>
+        <small *ngIf="!email.valid && email.touched" class="invalid-feedback d-block text-danger">
+          El correo no es válido
+        </small>
+      </div>
 
-		<div>
-			<label for="password">Contraseña<span class="text-danger">*</span></label>
-			<input type="password" name="password" class="input-100" #password="ngModel"
-				[(ngModel)]="client.password" required>
+      <div>
+        <label for="password">Contraseña<span class="text-danger">*</span></label>
+        <input type="password" name="password" class="input-100" #password="ngModel" [(ngModel)]="client.password"
+          required>
 
-			<small *ngIf="!password.valid && password.touched" class="invalid-feedback d-block text-danger">
-				La contraseña no es válida
-			</small>
-		</div>
+        <small *ngIf="!password.valid && password.touched" class="invalid-feedback d-block text-danger">
+          La contraseña no es válida
+        </small>
+      </div>
 
-	<!--	
+      <!--	
 		<div>
 			<label for="phone">Telefono</label>
 			<input type="text" name="phone" class="input-100" maxlength="30" #phone="ngModel" [(ngModel)]="client.phone"
@@ -79,11 +79,31 @@
 			</small>
 		</div> -->
 
-		<br><br>
-		
-		<input type="submit" value="Registrate" class="btn btn-primary width-100 " [disabled]="registerForm.invalid" />
-	</form>
+      <br><br>
+
+      <input type="submit" value="Registrate" class="btn btn-primary width-100 " [disabled]="registerForm.invalid" />
+    </form>
+
+  </div>
 
 </div>
 
+
+<div id="loading1" style="display: none; color: rebeccapurple;" *ngIf="loading">
+	<h4 class="modal-title"  >Espere un momento</h4>
+	
+  <div class="sk-fading-circle">
+	<div class="sk-circle1 sk-circle"></div>
+	<div class="sk-circle2 sk-circle"></div>
+	<div class="sk-circle3 sk-circle"></div>
+	<div class="sk-circle4 sk-circle"></div>
+	<div class="sk-circle5 sk-circle"></div>
+	<div class="sk-circle6 sk-circle"></div>
+	<div class="sk-circle7 sk-circle"></div>
+	<div class="sk-circle8 sk-circle"></div>
+	<div class="sk-circle9 sk-circle"></div>
+	<div class="sk-circle10 sk-circle"></div>
+	<div class="sk-circle11 sk-circle"></div>
+	<div class="sk-circle12 sk-circle"></div>
+  </div>
 </div>

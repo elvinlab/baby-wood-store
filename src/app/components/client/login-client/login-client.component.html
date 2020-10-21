@@ -43,7 +43,7 @@
           </u>
 
           <div class="action-options">
-            <input type="submit" value="Ingresar" class="btnLog" [disabled]="loginForm.invalid" />
+            <input type="submit" value="Ingresar" class="btnLog" (click)="onSubmit()" [disabled]="loginForm.invalid" />
           </div>
 
         </form>

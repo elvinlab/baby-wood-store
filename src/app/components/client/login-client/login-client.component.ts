@@ -7,7 +7,6 @@ import {
   FacebookLoginProvider,
   GoogleLoginProvider,
 } from 'angularx-social-login';
-import { SocialUser } from 'angularx-social-login';
 
 @Component({
   selector: 'app-login-client',
@@ -23,7 +22,6 @@ export class LoginClientComponent implements OnInit {
   showModal: boolean;
   submitted = false;
 
-  user: SocialUser;
   loggedIn: boolean;
 
   constructor(
@@ -59,7 +57,6 @@ export class LoginClientComponent implements OnInit {
 
   ngOnInit() {
     this._authService.authState.subscribe((user) => {
-      this.user = user;
       this.loggedIn = user != null;
     });
   }
@@ -88,7 +85,7 @@ export class LoginClientComponent implements OnInit {
         'ROLE_CLIENT'
       );
 
-      this._clientService.register(this.client).subscribe(
+      this._clientService.register_login_fb_google(this.client).subscribe(
         (response) => {
           if (response.status == 'success') {
             this.loading = false;
@@ -146,7 +143,7 @@ export class LoginClientComponent implements OnInit {
         'ROLE_CLIENT'
       );
 
-      this._clientService.register(this.client).subscribe(
+      this._clientService.register_login_fb_google(this.client).subscribe(
         (response) => {
           if (response.status == 'success') {
             this.loading = false;
