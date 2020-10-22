@@ -10,15 +10,17 @@ import {MatInputModule} from '@angular/material/input';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 
-import { ClientDetailRoutingModule } from './client-detail-routing.module';
-import { ClientEditComponent } from './client-edit/client-edit.component';
-import { ClientDetailComponent } from './client-detail.component';
+
+import { AdministratorRoutingModule } from './administrator-routing.module';
+import { LoginAdministratorComponent } from './login-administrator/login-administrator.component';
+
 
 @NgModule({
-  declarations: [ClientEditComponent, ClientDetailComponent],
+  declarations: [LoginAdministratorComponent],
   imports: [
     CommonModule,
-    ClientDetailRoutingModule,
+    AdministratorRoutingModule,
+    CommonModule,
     MatToolbarModule,
     MatButtonModule,
     MatDialogModule,
@@ -28,9 +30,6 @@ import { ClientDetailComponent } from './client-detail.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-  ],
-  providers: [  
-    MatDatepickerModule,  
   ]
 })
-export class ClientDetailModule { }
+export class AdministratorModule { }
