@@ -9,11 +9,6 @@ import {
   FacebookLoginProvider,
 } from 'angularx-social-login';
 
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatButtonModule} from '@angular/material/button';
-import {MatDialogModule} from '@angular/material/dialog';
-import {MatInputModule} from '@angular/material/input';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/global/home/home.component';
@@ -26,12 +21,13 @@ import { HeaderBottomComponent } from './components/global/header-bottom/header-
 import { CategoryTabComponent } from './components/global/category-tab/category-tab.component';
 import { RecommendedItemsComponent } from './components/global/recommended-items/recommended-items.component';
 import { FooterComponent } from './components/global/footer/footer.component';
+import { LoginAdministratorComponent } from './components/administrator/login-administrator/login-administrator.component';
+import { RegisterAdministratorComponent } from './components/administrator/register-administrator/register-administrator.component';
 import { LoginClientComponent } from './components/client/login-client/login-client.component';
 import { RegisterClientComponent } from './components/client/register-client/register-client.component';
 import { ChangePasswordComponent } from './components/global/change-password/change-password.component';
 import { ChangePasswordRequestComponent } from './components/global/change-password-request/change-password-request.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AdministratorComponent } from './components/administrator/administrator.component';
 
 @NgModule({
   declarations: [
@@ -46,11 +42,12 @@ import { AdministratorComponent } from './components/administrator/administrator
     CategoryTabComponent,
     RecommendedItemsComponent,
     FooterComponent,
+    LoginAdministratorComponent,
+    RegisterAdministratorComponent,
     LoginClientComponent,
     RegisterClientComponent,
     ChangePasswordComponent,
     ChangePasswordRequestComponent,
-    AdministratorComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,11 +56,6 @@ import { AdministratorComponent } from './components/administrator/administrator
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatDialogModule,
-    MatInputModule
-
   ],
   providers: [
     {
