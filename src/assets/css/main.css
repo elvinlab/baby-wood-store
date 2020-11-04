@@ -147,17 +147,17 @@ a#scrollUp i{
 }
 
 .header-middle .container .row .col-sm-3{
-  padding-left: 0;
+  padding-left: 0px;
 }
 
 #nav-logo {
-  width: 230px;
-  height: 60px;
-  padding-top: 10px;
+  width: 270px;
+  height: 85px;
+  margin-top: -10px;
 }
 
 .header-middle .container .row .col-sm-9 {
-	padding-right:0;
+	padding-right:20px;
 }
 
 .btn-group.open .dropdown-toggle {
@@ -504,6 +504,7 @@ padding: 0%;
   text-align: center;
   text-transform: uppercase;
   position: relative;
+  padding-top: 15px;
   z-index:3;
 }
 
@@ -667,6 +668,7 @@ h2.title:before{
 
 .features_items{
   overflow:hidden;
+  padding-top: 15px;
 }
 
 
