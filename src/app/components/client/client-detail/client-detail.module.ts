@@ -29,7 +29,16 @@ import { ClientDetailComponent } from './client-detail.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-  ],
+  ], 
+  exports: [
+    MatToolbarModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatInputModule
+ ],
   providers: [  
     MatDatepickerModule,  
   ]
