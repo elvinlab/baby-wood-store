@@ -163,7 +163,7 @@
 }
 
 .mainmenu ul li{
-	background: rgba(0, 0, 0, 0.5);
+	background: #345F65;
     padding-top: 15px;
 	padding-bottom: 0;
 }
@@ -343,7 +343,7 @@ ul.sub-menu{
 	margin-right: 0;
 }
 
-.header-bottom .col-sm-9{
+.header-bottom .col-sm-12{
 	display: inline-block;
 	width: 100%;
 }
@@ -353,7 +353,7 @@ ul.sub-menu{
 }
 
 .mainmenu ul li{
-	background: rgba(0, 0, 0, 0.5);
+	background: #E8DEB4;
     padding-top: 15px;
 	padding-bottom: 0;
 }
@@ -363,7 +363,7 @@ ul.sub-menu{
 }
 
 .mainmenu ul li a {
-	color: #FFF;
+	color: #345F65;
 	padding-bottom: 0;
 }
 
@@ -387,7 +387,6 @@ ul.sub-menu{
   box-shadow: none;
   top: 0;
 }
-
 
 .mainmenu .navbar-nav li ul.sub-menu li{
 	background: transparent;

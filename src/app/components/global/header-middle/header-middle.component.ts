@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-header-middle',
   templateUrl: './header-middle.component.html',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderMiddleComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _router: Router,
+  ) {
+
+   }
 
   ngOnInit(): void {
+  }
+
+  goProducts(): void {
+
+    this._router.navigate(['registro-cliente']); // Ir a la vista de productos
   }
 
 }
