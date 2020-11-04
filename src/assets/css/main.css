@@ -621,10 +621,10 @@ h2.title:before{
 
 .shipping {
   background-color: #F2F2F2;
+  width: 100%;
   margin-top: 40px;
   overflow: hidden;
   padding-top: 20px;
-  position: relative;
 }
 
 
@@ -834,7 +834,7 @@ h2.title {
 }
 
 .category-tab ul {
-  background: #40403E;
+  background: #e8ddb5;
   border-bottom: 1px solid #9F5832;
   list-style: none outside none;
   margin: 0 0 30px;
@@ -845,7 +845,7 @@ h2.title {
 .category-tab ul li a {
   border: 0 none;
   border-radius: 0;
-  color: #B3AFA8;
+  color: #9F5832;
   display: block;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -901,8 +901,6 @@ h2.title {
   background: #ccccc6;
 }
 
-.recommended_items  h2 {
-}
 
 .our_partners{
   overflow:hidden;

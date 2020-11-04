@@ -18,7 +18,7 @@
         </div>
 
         <div class="form-group">
-          <label class="txt font-weight-bold">Apellido </label>
+          <label class="txt font-weight-bold">Apellido <span class="text-danger">*</span></label>
           <input type="text" name="surname" maxlength="30" placeholder="Ingrese su Apellido" class="input-50"
             #surname="ngModel" [(ngModel)]="client.surname" required pattern="[a-zA-Z]+">
 
@@ -71,9 +71,9 @@
 			</small>
     </div> -->
     
-      <input type="submit" value="Registrate" class="btn btn-primary width-100 " [disabled]="registerForm.invalid" />
+      <input type="submit" value="Registrate" class="btn width-100 " [disabled]="registerForm.invalid" />
     
-      <p class="social-text">O Registrarse con una red social</p>
+      <p class="social-text">Registrate con una red social</p>
       <div class="social-media">
         <button class="social-icon" (click)="signInWithFB()">
           <img src="../../../../assets/images/icon/facebook.png">
@@ -95,7 +95,7 @@
           Unete a la familia Baby Wood y se parte de nuestra comunidad, que estas esperando!
         </p>
       </div>
-      <img src="../../../../assets/images/icon/log.svg" class="image" alt="" />
+      <img src="../../../../assets/images/icon/fondo-reg.jpg" class="image" alt="" />
   </div>
 </div>
 
