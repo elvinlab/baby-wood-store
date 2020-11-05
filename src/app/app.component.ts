@@ -1,4 +1,5 @@
 import { Component, OnInit, DoCheck } from '@angular/core';
+import { title } from 'process';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +10,11 @@ export class AppComponent implements OnInit, DoCheck {
 
   public identity: any;
   public token: string;
-
-  constructor() {
+  title: string;
+  constructor(
+    
+  ) {
+    this.title = 'Baby Wood Tienda';
     this.loadAccount();
    }
 
@@ -26,4 +30,7 @@ export class AppComponent implements OnInit, DoCheck {
     this.token = localStorage.getItem('token');
   }
 
+  //tienda->promociones->
+  //nuevos servicio_>convenio_empresarial->disenno de muebles y espacios->consultoria forestal
+  //cotizacion
 }
