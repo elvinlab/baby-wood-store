@@ -3,13 +3,12 @@ import { Router } from '@angular/router';
 import { Client } from '../../../../models/client';
 import { ClientService } from '../../../../services/client/client.service';
 import Swal from 'sweetalert2/dist/sweetalert2.js';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-client-edit',
   templateUrl: './client-edit.component.html',
   styleUrls: ['./client-edit.component.css'],
-  providers: [ClientService, HttpClient ],
+  providers: [ClientService],
 })
 export class ClientEditComponent implements OnInit {
   public client: Client;

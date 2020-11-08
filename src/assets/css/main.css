@@ -152,7 +152,8 @@ a#scrollUp i{
 
 #nav-logo {
   width: 270px;
-  height: 100px;
+  height: 85px;
+  margin-top: -10px;
 }
 
 .header-middle .container .row .col-sm-9 {

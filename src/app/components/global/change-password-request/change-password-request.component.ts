@@ -6,7 +6,7 @@ import Swal from 'sweetalert2/dist/sweetalert2.js';
   selector: 'app-change-password-request',
   templateUrl: './change-password-request.component.html',
   styleUrls: ['./change-password-request.component.css'],
-  providers: [ ClientService, FormBuilder, FormGroup, Validators ]
+  providers: [ ClientService ]
 })
 export class ChangePasswordRequestComponent implements OnInit {
 
