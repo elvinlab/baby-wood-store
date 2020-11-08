@@ -4,18 +4,17 @@
   aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      
-    <div class="bg"></div>
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Ingresa a la familia Baby Wood</h4>
+      </div>
+
+      <div class="modal-body ">
 
         <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
-
-          <div class="modal-header">
-            <img src="assets/images/home/Logos baby wood_horizontal_color.png" alt="main image" />
-          </div>
-
           <div class="form-group">
             <div class="label">
-              <br><br><label for="">Correo Electronico:</label>
+              <label for=""></label>
+              <i class="fa fa-user"></i>
 
               <input type="email" class="form-control" name="email" placeholder="  Correo Electronico" #email="ngModel"
                 [(ngModel)]="client.email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
@@ -27,7 +26,8 @@
 
           <div class="form-group">
             <div class="label">
-            <label for="">Contraseña:</label>
+              <label for=""></label>
+              <i class="fa fa-lock"></i>
 
               <input type="password" name="password" class="form-control" placeholder="  Contraseña" #password="ngModel"
                 [(ngModel)]="client.password" required>
@@ -47,6 +47,21 @@
           </div>
 
         </form>
+
+        <div class="btnsocial">
+
+            <span>
+              Ingresar con: 
+          </span>
+          <div  class="social">
+              <button title="facebook" (click)="signInWithFB()"><i class="fa fa-facebook"></i></button>
+              <button title="Google Plus" (click)="signInWithGoogle()">
+                <img src="../../../../assets/images/icon/google.png" >
+              </button>
+
+          </div>
+        </div>
+      </div>
 
       <div id="loading" style="display: none; color: rebeccapurple;" *ngIf="loading">
           <h4 class="modal-title"  >Espere un momento</h4>
@@ -69,25 +84,10 @@
 
       <div class="modal-footer">
 
-        <!-- 
-       -->
-       
-       <div class="btnsocial">
-        <p class="social-text">Ingresa con una red social</p>
-        <div class="social-media">
-          <button class="social-icon" (click)="signInWithFB()">
-            <img src="../../../../assets/images/icon/facebook.png">
-          </button>
-        <button class="social-icon" (click)="signInWithGoogle()">
-          <img src="../../../../assets/images/icon/google.png">
+        <button type="button" class="btn btn-dark" data-dismiss="modal" (click)="hide()">
+          Cerrar
         </button>
-        </div>
       </div>
-     <button type="button" class="btn btn-dark" data-dismiss="modal" (click)="hide()">
-      Cerrar
-    </button>
-       </div>
-
     </div>
   </div>
 </div>
