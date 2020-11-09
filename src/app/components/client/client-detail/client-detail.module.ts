@@ -29,6 +29,7 @@ import { ClientDetailComponent } from './client-detail.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    BrowserModule,
   ], 
   exports: [
     MatToolbarModule,

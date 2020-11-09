@@ -527,33 +527,78 @@ ul.sub-menu{
 }
 
 /*Responsive Parte de Login*/
-.modal-content{
+.modal-dialog{
 	width: 350px;
 	height: 550px;
 	position: relative;
+	height: 500px;
+	float: center;
+  }
+  
+.modal-content{
+	height: 100%;
+	margin: auto;
+	display:flex;
+	justify-content: center;
+	
 }
+
 
 #contra{
-margin-top: -20px;
-right: 50px;
-}
+	margin-top: -20px;
+	right: 50px;
+	}
+	#contra:hover{color: #859456}
+	.btnsocial{
+	  margin-left: -5px;
+	}
+	.btnsocial .social{
+		margin-right: 40px;
+		justify-content:space-between;
+		height:auto;
+	  display:flex;
+	}
+	.btnsocial button{
+		width:70%;
+	}
+	.btnLog{
+		padding:12px 30px;
+		margin-right: 250px;
+	}
+	.btnLog:hover{
+		background-color: #e8ddb5;
+		color: #9F5832;
+		border-color: #0066ff;
+	  }
+	  .social-text {
+		padding: 0.7rem 0;
+		text-align: center;
+		margin-right: -15px;
+		font-size: 1.8rem;
+		color: #e8ddb5;
+	  }
+	.modal-footer{margin-left: 40px;}
+	.modal-footer .btnsocial .social-icon{
+	  background-color: #e8ddb5;
+	  justify-content: center;
+	  align-items: center;
+	  margin: 15px 0px;
+	  margin-right: 5px;
+	  color: #333;
+	  border: 1px solid #336064;
+	  transition: 0.3s;
+	}
+	.modal-footer .btnsocial .social-icon:hover {
+		color: #336064;
+		border-color: #4481eb;
+	background-color: #336064;
+	  }
+	.modal-footer .btn:hover{
+		background-color: #336064;
+		color: #e8ddb5;
+	  }
+	.modal-footer{margin-right: 50px;}
 
-.btnsocial{
-  margin-left: -5px;
-}
-.btnsocial .social{
-	margin-right: 40px;
-	justify-content:space-between;
-	height:auto;
-  display:flex;
-}
-.btnsocial button{
-	width:70%;
-}
-.btnLog{
-	padding:12px 30px;
-	margin-right: 250px;
-}
-.modal-footer{margin-right: 50px;}
+/*Responsive Parte de Forgot password*/
 
 }
