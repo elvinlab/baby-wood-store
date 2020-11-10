@@ -23,6 +23,7 @@ text-decoration:none;
 }
 
 a:focus {
+  color: #000;
   outline:none;
   outline-offset: 0;
 }
@@ -67,75 +68,36 @@ a#scrollUp i{
 *******Header CSS******
 **************************/
 
-.header_top {
+.headerTop {
   background: none repeat scroll 0 0 #9F5832;
 }
 
-.contactinfo ul li:first-child{
-    margin-left: 10px;
-}
-
-.contactinfo ul li a{
-  font-size: 12px;
-  color: #ffff;
-  font-family: 'Roboto', sans-serif;
-}
 #slogan{
   margin-inline-end: 10px;
   text-transform: uppercase;
   display: inline;
 }
 
-.contactinfo ul li a:hover{
-	background:inherit;
-}
-.social-icons ul li a {
-  border: 0 none;
-  border-radius: 0;
+.login-register ul li a {
   color: #ffff;
-  padding:0px;
+  padding:8px;
+}
+.login-register ul li a:hover{
+  background-color: #336064;
+}
+.login-register ul li a:focus{
+  background-color: #336064;
 }
 
+.login-register ul li a i {
+   transition: all 0.9s ease 0s;
+  -moz-transition: all 0.9s ease 0s;
+  -webkit-transition: all 0.9s ease 0s;
+  -o-transition: all 0.9s ease 0s;
+}
 
-.social-icons ul li{
+.login-register ul li{
 	display:inline-block;
-}
-
-.social-icons ul li a i {
-  padding: 11px 15px;
-   transition: all 0.9s ease 0s;
-  -moz-transition: all 0.9s ease 0s;
-  -webkit-transition: all 0.9s ease 0s;
-  -o-transition: all 0.9s ease 0s;
-}
-
-.social-icons ul li a i:hover{
-  color: #fff;
-   transition: all 0.9s ease 0s;
-  -moz-transition: all 0.9s ease 0s;
-  -webkit-transition: all 0.9s ease 0s;
-  -o-transition: all 0.9s ease 0s;
-}
-
-
-.fa-facebook:hover {
-  background: #0083C9;
-}
-
-.fa-twitter:hover  {
-	background:#5BBCEC;
-}
-
-.fa-linkedin:hover  {
-	background:#FF4518;
-}
-
-.fa-dribbble:hover  {
-	background:#90C9DC;
-}
-
-.fa-google-plus:hover  {
-	background:#CE3C2D;
 }
 
 .header-middle .container .row {
@@ -190,7 +152,6 @@ a#scrollUp i{
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 400;
-  padding-right: 0;
   margin-top: 10px;
 }
 
@@ -199,12 +160,12 @@ a#scrollUp i{
 }
 
 .shop-menu ul li a:hover {
-	color:#345F65;
-	background:none;
+	color:#fff;
+	background:#336064;
 }
 
 .header-bottom {
-  background-color: #e7ddb473;
+  background-color: #f1c10073;
   padding-bottom: 5px;
   padding-top: 5px;
   border-bottom: 2px solid #9f5832c0;
@@ -274,12 +235,12 @@ a#scrollUp i{
 ul.sub-menu {
 	position: absolute;
 	top: 30px;
-	left: 0;
-	background: #E8DEB4;
+  left: 0;
+	background: #ffffff;
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	width: 220px;
+	width: 300px;
 	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 	display: none;
@@ -305,26 +266,13 @@ ul.sub-menu {
 }
 
 .navbar-nav li ul.sub-menu li a:hover{
-    color: #345F65;
+    color: #ffffff;
 }
 
 .fa-angle-down{
   padding-left: 5px; 
 }
 
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
   
 /*************************
 *******Footer CSS******
@@ -1267,13 +1215,6 @@ h2.title {
   overflow: hidden;
 }
 
-.login-form {
-
-}
-
-.signup-form {
-
-}
 
 .login-form h2, .signup-form h2 {
   color: #696763;
@@ -1323,11 +1264,6 @@ h2.title {
   font-family: 'Roboto', sans-serif;
   padding: 6px 25px;
 }
-
-.login-form label{
-
-}
-
 
 .login-form label input {
   border: medium none;
@@ -1474,7 +1410,6 @@ h2.title {
   overflow: hidden;
   text-align: center;
   width: 35px;
-  float: left;
 }
 
 
@@ -1585,8 +1520,6 @@ h2.title {
   margin-right: 10px
 }
 
-.user_info > li > span {
-}
 
 .user_info input, select, textarea {
   background: #F0F0E9;
@@ -1833,9 +1766,6 @@ h2.title {
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 17px;
-}
-
-.single-blog-post > a {
 }
 
 .blog-post-area 
@@ -2355,11 +2285,6 @@ h2.title {
   color: #9F5832;
 }
 
-/* CSS Login Cliente*/
-/*.modal-content{
-  background-image: url("../../../../assets/images/icon/fondo-log.jpg");
-  background-size: 1440px;
-}*/
 
 .form-group{
 width:100%;

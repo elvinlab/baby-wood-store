@@ -127,12 +127,12 @@
 
 .header_top .col-sm-6:first-child{
 	display: inline-block;
-	float: left;
+
 }
 
 .header_top .col-sm-6:last-child{
 	display: inline-block;
-	float: right;
+
 }
 
 .header-middle .col-sm-3 {
@@ -141,7 +141,12 @@
 	width: 100%;
 }
 
-.social-icons ul li a i {
+.login-register ul li a {
+	color: #ffff;
+	padding:8px;
+  }
+
+.login-register ul li a i {
 	padding: 8px 10px;
 }
 
@@ -260,10 +265,6 @@ ul.sub-menu{
 	display: inline-block;
 }
 
-.single-widget{
-
-}
-
 .product-information span {
 	display: block;
 }
@@ -281,19 +282,11 @@ ul.sub-menu{
 /* XS Portrait */
 @media (max-width: 480px) {
 
-.contactinfo{
-	text-align: center;
-}
-
-.contactinfo ul li a {
-	padding-right: 25px;
-	padding-left: 0;
-}
 #slogan{
 	margin-left: 60px;
 	text-transform: uppercase;
   }
-.social-icons.pull-right{
+.login-register.pull-right{
 	float: none !important;
 	text-align: center;
 }
@@ -315,10 +308,6 @@ ul.sub-menu{
 .header_top .col-sm-6:last-child{
 	display: block;
 	float: none;
-}
-
-.contactinfo .nav.nav-pills, .social-icons .nav.navbar-nav{
-	display: inline-block;
 }
 
 .logo{

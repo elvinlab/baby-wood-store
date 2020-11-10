@@ -1,93 +1,113 @@
 <a (click)="show()">Iniciar sesión</a>
-<!-- Creates the bootstrap modal where the image will appear -->
-<div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog"
-  aria-labelledby="myModalLabel" aria-hidden="true">
+<div
+  [style.display]="showModal ? 'block' : 'none'"
+  class="modal"
+  id="imagemodal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+>
   <div class="modal-dialog">
     <div class="modal-content">
-      
-    <div class="bg"></div>
+      <div class="bg"></div>
 
-        <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+      <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="modal-header">
+          <img
+            src="assets/images/home/Logos baby wood_horizontal_color.png"
+            alt="main image"
+          />
+        </div>
 
-          <div class="modal-header">
-            <img src="assets/images/home/Logos baby wood_horizontal_color.png" alt="main image" />
+        <div class="form-group">
+          <div class="label">
+            <br /><br /><label for="">Correo Electronico:</label>
+
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              placeholder="  Correo Electronico"
+              #email="ngModel"
+              [(ngModel)]="client.email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            />
           </div>
+          <small
+            *ngIf="!email.valid && email.touched"
+            class="invalid-feedback d-block"
+          >
+            El correo no es válido
+          </small>
+        </div>
 
-          <div class="form-group">
-            <div class="label">
-              <br><br><label for="">Correo Electronico:</label>
-
-              <input type="email" class="form-control" name="email" placeholder="  Correo Electronico" #email="ngModel"
-                [(ngModel)]="client.email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-            </div>
-            <small *ngIf="!email.valid && email.touched" class="invalid-feedback d-block">
-              El correo no es válido
-            </small>
-          </div>
-
-          <div class="form-group">
-            <div class="label">
+        <div class="form-group">
+          <div class="label">
             <label for="">Contraseña:</label>
 
-              <input type="password" name="password" class="form-control" placeholder="  Contraseña" #password="ngModel"
-                [(ngModel)]="client.password" required>
-            </div>
-
-            <small *ngIf="!password.valid && password.touched" class="invalid-feedback d-block">
-              La contraseña no es válida
-            </small>
+            <input
+              type="password"
+              name="password"
+              class="form-control"
+              placeholder="  Contraseña"
+              #password="ngModel"
+              [(ngModel)]="client.password"
+              required
+            />
           </div>
 
-          <div>
-            <p id="contra" [routerLink]="['/restablecer-password']" (click)="hide()">¿Has olvidado tu contraseña?</p>
-          </div>
-
-          <div class="action-options">
-            <input type="submit" value="Ingresar" class="btnLog" (click)="onSubmit()" [disabled]="loginForm.invalid" />
-          </div>
-
-        </form>
-
-      <div id="loading" style="display: none; color: rebeccapurple;" *ngIf="loading">
-          <h4 class="modal-title"  >Espere un momento</h4>
-          
-        <div class="sk-fading-circle">
-          <div class="sk-circle1 sk-circle"></div>
-          <div class="sk-circle2 sk-circle"></div>
-          <div class="sk-circle3 sk-circle"></div>
-          <div class="sk-circle4 sk-circle"></div>
-          <div class="sk-circle5 sk-circle"></div>
-          <div class="sk-circle6 sk-circle"></div>
-          <div class="sk-circle7 sk-circle"></div>
-          <div class="sk-circle8 sk-circle"></div>
-          <div class="sk-circle9 sk-circle"></div>
-          <div class="sk-circle10 sk-circle"></div>
-          <div class="sk-circle11 sk-circle"></div>
-          <div class="sk-circle12 sk-circle"></div>
+          <small
+            *ngIf="!password.valid && password.touched"
+            class="invalid-feedback d-block"
+          >
+            La contraseña no es válida
+          </small>
         </div>
-      </div>
+
+        <div>
+          <p
+            id="contra"
+            [routerLink]="['/restablecer-password']"
+            (click)="hide()"
+          >
+            ¿Has olvidado tu contraseña?
+          </p>
+        </div>
+
+        <div class="action-options">
+          <input
+            type="submit"
+            value="Ingresar"
+            class="btnLog"
+            (click)="onSubmit()"
+            [disabled]="loginForm.invalid"
+          />
+        </div>
+      </form>
 
       <div class="modal-footer">
-
-        <!-- 
-       -->
-       
-       <div class="btnsocial">
-        <p class="social-text">Ingresa con una red social</p>
-        <div class="social-media">
-          <button class="social-icon" (click)="signInWithFB()">
-            <img src="../../../../assets/images/icon/facebook.png">
-          </button>
-        <button class="social-icon" (click)="signInWithGoogle()">
-          <img src="../../../../assets/images/icon/google.png">
-        </button>
+        <div class="btnsocial">
+          <p class="social-text">Ingresa con una red social</p>
+          <div class="social-media">
+            <button class="social-icon" (click)="signInWithFB()">
+              <img src="../../../../assets/images/icon/facebook.png" />
+            </button>
+            <button class="social-icon" (click)="signInWithGoogle()">
+              <img src="../../../../assets/images/icon/google.png" />
+            </button>
+          </div>
         </div>
+        <button
+          type="button"
+          class="btn btn-dark"
+          data-dismiss="modal"
+          (click)="hide()"
+        >
+          Cerrar
+        </button>
       </div>
-     <button type="button" class="btn btn-dark" data-dismiss="modal" (click)="hide()">
-      Cerrar
-    </button>
-       </div>
-
     </div>
   </div>
 </div>

@@ -1,27 +1,54 @@
-    <div class="header_top">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="contactinfo">
-              <ul class="nav nav-pills">
-                <li><a href="#"><i class="fa fa-phone"></i> +506 7103-7500 </a></li>
-                <li><a href="#"><i class="fa fa-envelope"></i> babywoodcr@gmail.com</a></li>
-              </ul>
-            </div>
-          </div>
-         
-          <div class="col-sm-6">
-            <div class="social-icons pull-right">
-              <ul class="nav navbar-nav">
-                <li *ngIf="!identity" ><a [routerLink]="['/registro-cliente']"  routerLinkActive="active"><i class="fa fa-sign-in"></i> Registrate</a></li>
-                <li *ngIf="!identity" ><a [routerLink]="" ><i class="fa fa-lock"></i> <app-login-client></app-login-client> </a></li>
-                <li *ngIf="identity" ><a [routerLink]="['/perfil']"  routerLinkActive="active"><i class="fa fa-cogs"></i> Cuenta </a></li>
-                <li *ngIf="identity" ><a [routerLink]="" (click)="signOut()"><i class="fa fa-sign-out"></i> Salir </a></li>
-                <li *ngIf="identity" ><a [routerLink]="" ><i class="fa fa-user"></i> {{ identity.name + ' ' + identity.surname }} </a></li>
-              </ul>
-            </div>
-          </div>
+<div class="headerTop">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="login-register">
+          <ul class="nav nav-pills">
+            <li>
+              <a href="#"><i class="fa fa-phone"></i> +506 7103-7500 </a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-envelope"></i> babywoodcr@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="login-register pull-right">
+          <ul class="nav navbar-nav">
+            <li *ngIf="!identity">
+              <a [routerLink]="['/registro-cliente']" routerLinkActive="active"
+                ><i class="fa fa-sign-in"></i> Registrate</a
+              >
+            </li>
+            <li *ngIf="!identity">
+              <a [routerLink]=""
+                ><i class="fa fa-lock"></i>
+                <app-login-client></app-login-client>
+              </a>
+            </li>
+            <li *ngIf="identity">
+              <a [routerLink]="['/perfil']" routerLinkActive="active"
+                ><i class="fa fa-cogs"></i> Cuenta
+              </a>
+            </li>
+            <li *ngIf="identity">
+              <a [routerLink]="" (click)="signOut()"
+                ><i class="fa fa-sign-out"></i>Salir
+              </a>
+            </li>
+            <li *ngIf="identity">
+              <a [routerLink]=""
+                ><i class="fa fa-user"></i>
+                {{ identity.name + " " + identity.surname }}
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
- 
+  </div>
+</div>

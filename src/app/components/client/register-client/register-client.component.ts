@@ -46,10 +46,13 @@ export class RegisterClientComponent implements OnInit {
   ngOnInit() {}
 
   signInWithFB(): void {
+
+    Swal.fire('Espere un momento');
+    Swal.showLoading();
+
     this._authService.signIn(FacebookLoginProvider.PROVIDER_ID);
 
     this._authService.authState.subscribe((response) => {
-      document.getElementById('loading1').style.display = 'block';
       console.log(response);
       this.client = new Client(
         'id',
@@ -79,15 +82,9 @@ export class RegisterClientComponent implements OnInit {
             localStorage.setItem('token', this.token);
             localStorage.setItem('identity', JSON.stringify(this.identity));
 
-            Swal.fire({
-              icon: 'success',
-              title: 'Hola',
-              text: response.message,
-              showConfirmButton: false,
-              timer: 1500,
-            });
+            Swal.close();
+
             this._router.navigate(['inicio']);
-            document.getElementById('loading1').style.display = 'none';
           }
         },
 
@@ -97,17 +94,19 @@ export class RegisterClientComponent implements OnInit {
             title: error.error.message,
             text: error.error.error,
           });
-          document.getElementById('loading1').style.display = 'none';
         }
       );
     });
   }
 
   signInWithGoogle(): void {
+
+    Swal.fire('Espere un momento');
+    Swal.showLoading();
+
     this._authService.signIn(GoogleLoginProvider.PROVIDER_ID);
 
     this._authService.authState.subscribe((response) => {
-      document.getElementById('loading1').style.display = 'block';
       console.log(response);
       this.client = new Client(
         'id',
@@ -138,15 +137,8 @@ export class RegisterClientComponent implements OnInit {
             localStorage.setItem('token', this.token);
             localStorage.setItem('identity', JSON.stringify(this.identity));
 
-            Swal.fire({
-              icon: 'success',
-              title: 'Hola',
-              text: response.message,
-              showConfirmButton: false,
-              timer: 1500,
-            });
+            Swal.close();
             this._router.navigate(['inicio']);
-            document.getElementById('loading1').style.display = 'none';
           }
         },
 
@@ -156,35 +148,29 @@ export class RegisterClientComponent implements OnInit {
             title: error.error.message,
             text: error.error.error,
           });
-          document.getElementById('loading1').style.display = 'none';
         }
       );
     });
   }
 
-  onSubmit(form) {
-    document.getElementById('loading1').style.display = 'block';
+  onSubmit(ngForm) {
+
+    Swal.fire('Espere un momento');
+    Swal.showLoading();
+
     this._clientService.register(this.client).subscribe(
       (response) => {
 
         console.log(response);
         if (response.status == 'success') {
-          form.reset();
+          ngForm.reset();
           this.token = response.token;
           this.identity = response.data;
           localStorage.setItem('token', this.token);
           localStorage.setItem('identity', JSON.stringify(this.identity));
 
-          Swal.fire({
-            icon: 'success',
-            title: 'Hola',
-            text: response.message,
-            showConfirmButton: false,
-            timer: 1500,
-          });
-
+          Swal.close();
           this._router.navigate(['inicio']);
-          document.getElementById('loading1').style.display = 'none';
         }
       },
 
@@ -194,7 +180,6 @@ export class RegisterClientComponent implements OnInit {
           title: error.error.message,
           text: error.error.error,
         });
-        document.getElementById('loading1').style.display = 'none';
       }
     );
   }

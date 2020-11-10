@@ -62,10 +62,12 @@ export class LoginClientComponent implements OnInit {
   }
 
   signInWithFB(): void {
+    Swal.fire('Espere un momento');
+    Swal.showLoading();
+
     this._authService.signIn(FacebookLoginProvider.PROVIDER_ID);
 
     this._authService.authState.subscribe((response) => {
-      document.getElementById('loading').style.display = 'block';
       console.log(response);
       this.client = new Client(
         'id',
@@ -95,35 +97,27 @@ export class LoginClientComponent implements OnInit {
             localStorage.setItem('token', this.token);
             localStorage.setItem('identity', JSON.stringify(this.identity));
 
-            Swal.fire({
-              icon: 'success',
-              title: 'Hola',
-              text: response.message,
-              showConfirmButton: false,
-              timer: 1500,
-            });
-
-            document.getElementById('loading').style.display = 'none';
+            Swal.close();
           }
         },
 
         (error) => {
           Swal.fire({
             icon: 'error',
-            title: error.error.message,
-            text: error.error.error,
+            title: 'Solucionando problemas ...',
+            text: error.error.message,
           });
-          document.getElementById('loading').style.display = 'none';
         }
       );
     });
   }
 
   signInWithGoogle(): void {
-    this._authService.signIn(GoogleLoginProvider.PROVIDER_ID);
+    Swal.fire('Espere un momento');
+    Swal.showLoading();
 
+    this._authService.signIn(GoogleLoginProvider.PROVIDER_ID);
     this._authService.authState.subscribe((response) => {
-      document.getElementById('loading').style.display = 'block';
       console.log(response);
       this.client = new Client(
         'id',
@@ -154,21 +148,15 @@ export class LoginClientComponent implements OnInit {
             localStorage.setItem('token', this.token);
             localStorage.setItem('identity', JSON.stringify(this.identity));
 
-            Swal.fire({
-              icon: 'success',
-              title: 'Hola',
-              text: response.message,
-              showConfirmButton: false,
-              timer: 1500,
-            });
+            Swal.close();
           }
         },
-
         (error) => {
+          console.log(error);
           Swal.fire({
             icon: 'error',
-            title: error.error.message,
-            text: error.error.error,
+            title: 'Solucionando problemas ...',
+            text: error.error.message,
           });
         }
       );
@@ -176,6 +164,9 @@ export class LoginClientComponent implements OnInit {
   }
 
   onSubmit() {
+    Swal.fire('Espere un momento');
+    Swal.showLoading();
+
     this.submitted = true;
 
     this._clientService.login(this.client).subscribe(
@@ -191,13 +182,7 @@ export class LoginClientComponent implements OnInit {
             this.showModal = false;
           }
 
-          Swal.fire({
-            position: 'top',
-            icon: 'success',
-            title: 'Bienvenido de nuevo',
-            showConfirmButton: false,
-            timer: 1500,
-          });
+          Swal.close();
         } else {
           Swal.fire({
             icon: 'error',
@@ -207,10 +192,11 @@ export class LoginClientComponent implements OnInit {
         }
       },
       (error) => {
+        console.log(error);
         Swal.fire({
           icon: 'error',
-          title: error.error.message,
-          text: error.error.error,
+          title: 'Solucionando problemas ...',
+          text: error.error.message,
         });
       }
     );
