@@ -824,7 +824,9 @@ h2.title {
   line-height: 1.42857;
   margin-right:0;
 }
-
+/*************************
+*******recommended_items CSS******
+*************************
 .recommended_items {
   overflow: hidden;
 }
@@ -863,6 +865,10 @@ h2.title {
 .our_partners ul li a:hover{
 	background:none;
 }
+
+
+
+*/
 
 /*************************
 *******Shop CSS******
