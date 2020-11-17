@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/gotham-rounded');
+
 #slider {
   padding-top: 4px;
   margin-left: -15px;
@@ -32,14 +34,14 @@
 
 .item h1 {
   color: white;
-  font-family: abel;
+  font-family: "Gotham Rounded";
   font-size: 48px;
   margin-top: 115px;
 }
 
 .item h2 {
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "Gotham Rounded";
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 22px;
@@ -58,7 +60,7 @@
   border: 0 none;
   border-radius: 0;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family:"Gotham Rounded";
   font-size: 16px;
   font-weight: 300;
   margin-top: 23px;

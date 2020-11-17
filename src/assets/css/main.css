@@ -1,16 +1,13 @@
-﻿
-/*************************
-*******Typography******
-**************************/
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
-@import url(http://fonts.googleapis.com/css?family=Abel);
+﻿@import url("http://fonts.cdnfonts.com/css/gotham-rounded");
 
+* {
+  font-family: "Gotham Rounded";
+}
 body {
-  font-family: 'Roboto', sans-serif;
-  background:#ffff;
+  font-family: "Gotham Rounded";
+  background: #ffff;
   position: relative;
-  font-weight:400px;
+  font-weight: 400px;
 }
 
 ul li {
@@ -18,29 +15,34 @@ ul li {
 }
 
 a:hover {
-outline: none;
-text-decoration:none;
+  outline: none;
+  text-decoration: none;
 }
 
 a:focus {
   color: #000;
-  outline:none;
+  outline: none;
   outline-offset: 0;
 }
 
 a {
   -webkit-transition: 300ms;
   -moz-transition: 300ms;
-    -o-transition: 300ms;
-    transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gotham Rounded";
 }
 
 .btn:hover,
-.btn:focus{
+.btn:focus {
   outline: none;
   box-shadow: none;
 }
@@ -53,26 +55,25 @@ a#scrollUp {
   bottom: 0px;
   right: 10px;
   padding: 5px 10px;
-  background: #9F5832;
-  color: #FFF;
+  background: #9f5832;
+  color: #fff;
   -webkit-animation: bounce 3s ease infinite;
   animation: bounce 3s ease infinite;
 }
 
-a#scrollUp i{
+a#scrollUp i {
   font-size: 35px;
 }
-
 
 /*************************
 *******Header CSS******
 **************************/
 
 .headerTop {
-  background: none repeat scroll 0 0 #9F5832;
+  background: none repeat scroll 0 0 #9f5832;
 }
 
-#slogan{
+#slogan {
   margin-inline-end: 10px;
   text-transform: uppercase;
   display: inline;
@@ -80,24 +81,24 @@ a#scrollUp i{
 
 .login-register ul li a {
   color: #ffff;
-  padding:8px;
+  padding: 8px;
 }
-.login-register ul li a:hover{
+.login-register ul li a:hover {
   background-color: #336064;
 }
-.login-register ul li a:focus{
+.login-register ul li a:focus {
   background-color: #336064;
 }
 
 .login-register ul li a i {
-   transition: all 0.9s ease 0s;
+  transition: all 0.9s ease 0s;
   -moz-transition: all 0.9s ease 0s;
   -webkit-transition: all 0.9s ease 0s;
   -o-transition: all 0.9s ease 0s;
 }
 
-.login-register ul li{
-	display:inline-block;
+.login-register ul li {
+  display: inline-block;
 }
 
 .header-middle .container .row {
@@ -108,60 +109,50 @@ a#scrollUp i{
   padding-top: 15px;
 }
 
-.header-middle .container .row .col-sm-3{
+.header-middle .container .row .col-sm-3 {
   padding-left: 0px;
 }
 
 #nav-logo {
-  width: 270px;
-  height: 85px;
+  width: 330px;
+  height: 120px;
   margin-top: -10px;
+  margin-bottom: 15px;
 }
 
-.header-middle .container .row .col-sm-9 {
-	padding-right:20px;
-}
+
 
 .btn-group.open .dropdown-toggle {
   background: rgba(129, 2, 2, 0);
   box-shadow: none;
 }
 
-.dropdown-menu  li  a:hover, .dropdown-menu  li  a:focus {
-  background-color: #9F5832;
-  color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus {
+  background-color: #9f5832;
+  color: #ffffff;
+  font-family: "Gotham Rounded";
   text-decoration: none;
 }
 
-
 .shop-menu ul li {
-	display:inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.shop-menu ul li:last-child {
-  padding-right: 0px;
+  display: inline-block;
 }
 
 
 .shop-menu ul li a {
-  background: #FFFFFF;
-  color: #9F5832;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  margin-top: 10px;
+  background: #ffffff;
+  color: #9f5832;
+  font-family: "Gotham Rounded";
+  font-size: 14px;
+  font-weight: 350;
+  margin-top: 30px;
 }
 
-.shop-menu ul li a i{
-	margin-right:3px;
-}
 
 .shop-menu ul li a:hover {
-	color:#fff;
-	background:#336064;
+  color: #fff;
+  background: #336064;
 }
 
 .header-bottom {
@@ -169,61 +160,64 @@ a#scrollUp i{
   padding-bottom: 5px;
   padding-top: 5px;
   border-bottom: 2px solid #9f5832c0;
-
 }
 
-.navbar-collapse.collapse{
+.navbar-collapse.collapse {
   padding-left: 0;
 }
 
-.mainmenu ul li{
+.mainmenu ul li {
   margin-right: 0px;
   padding-right: 0px;
   padding-left: 35px;
 }
 
-.mainmenu ul li:first-child{
+.mainmenu ul li:first-child {
   padding-left: 10px;
 }
 
 .mainmenu ul li a {
-	color: #9F5932;
-	font-family: 'Roboto', sans-serif;
-	font-size: 17px;
+  color: #9f5932;
+  font-family:"Gotham Rounded";
+  font-size: 15px;
   font-weight: 400px;
   padding: 10px;
 }
 
-.mainmenu ul li a:hover, .mainmenu ul li a.active,  .shop-menu ul li a.active{
-  color:#ffffff;
-  background-color: #9F5932;
+.mainmenu ul li a:hover,
+.mainmenu ul li a.active,
+.shop-menu ul li a.active {
+  color: #ffffff;
+  background-color: #9f5932;
 }
 
+.search_box{
+  padding-top: 0px;
+}
 .search_box input {
   background: #a8a6a63f;
   border: 0 none;
-  color: #9F5832;
-  font-family: 'roboto';
-  font-size: 18px;
+  color: #9f5832;
+  font-family:"Gotham Rounded";
+  font-size: 15px;
   font-weight: 400;
   height: 55px;
   outline: medium none;
-  margin-top: -40px;
-  width: 370px;
+  margin-left: 70px;
+  margin-top: 15px;
+  width: 340px;
   background-image: url(../images/home/searchicon.png);
   background-repeat: no-repeat;
-  background-position: 340px;
+  background-position: 315px;
 }
 
 /*  Dropdown menu*/
 
-.navbar-header
-.navbar-toggle .icon-bar {
-    background-color: #fff;
+.navbar-header .navbar-toggle .icon-bar {
+  background-color: #fff;
 }
 
-
-.nav.navbar-nav > li:hover > ul.sub-menu{
+.nav.navbar-nav > li:hover > ul.sub-menu {
   display: block;
   -webkit-animation: fadeInUp 400ms;
   -moz-animation: fadeInUp 400ms;
@@ -233,117 +227,112 @@ a#scrollUp i{
 }
 
 ul.sub-menu {
-	position: absolute;
-	top: 30px;
+  position: absolute;
+  top: 30px;
   left: 0;
-	background: #ffffff;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	width: 300px;
-	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-	display: none;
-	z-index: 999;
+  background: #ffffff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 999;
 }
 
-.dropdown ul.sub-menu li .active{
-  color: #9F5832;
+.dropdown ul.sub-menu li .active {
+  color: #9f5832;
   padding-left: 0;
 }
 
-
-.navbar-nav li ul.sub-menu li{
-  padding: 10px 20px 0 ;
+.navbar-nav li ul.sub-menu li {
+  padding: 10px 20px 0;
 }
 
-.navbar-nav li ul.sub-menu li:last-child{
+.navbar-nav li ul.sub-menu li:last-child {
   padding-bottom: 20px;
 }
 
-.navbar-nav li ul.sub-menu li a{
-  color: #9F5832;
+.navbar-nav li ul.sub-menu li a {
+  color: #9f5832;
 }
 
-.navbar-nav li ul.sub-menu li a:hover{
-    color: #ffffff;
+.navbar-nav li ul.sub-menu li a:hover {
+  color: #ffffff;
 }
 
-.fa-angle-down{
+.fa-angle-down {
   padding-left: 5px;
 }
-
 
 /*************************
 *******Footer CSS******
 **************************/
 
 #footer {
-  background: #E7DDB4;
+  background: #e7ddb4;
 }
 
-.address  img {
-  width:100%;
+.address img {
+  width: 100%;
 }
-#contac_info{
-padding: 0%;
+#contac_info {
+  padding: 0%;
 }
-
 
 .footer-widget .container {
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid #ffffff;
   padding-top: 15px;
 }
 
 .single-widget h2 {
-  color: #9F5137;
-  font-family: 'Roboto', sans-serif;
+  color: #9f5137;
+  font-family:"Gotham Rounded";
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 22px;
   text-transform: uppercase;
 }
 
-.single-widget h2 i{
-	margin-right:15px;
+.single-widget h2 i {
+  margin-right: 15px;
 }
 
-.single-widget ul li a{
-	color: #9F5137;
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-	padding: 5px 0;
+.single-widget ul li a {
+  color: #9f5137;
+  font-family:"Gotham Rounded";
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 0;
 }
 
 .single-widget ul li a i {
   margin-right: 18px;
 }
 
-.single-widget ul li a:hover{
-	background:none;
-	color:#ffffff;
+.single-widget ul li a:hover {
+  background: none;
+  color: #ffffff;
 }
 
-
 .footer-bottom {
-  background: #CA693C;
+  background: #ca693c;
   padding-top: 4px;
 }
 
 .footer-bottom p {
   color: #ffff;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   font-weight: 300;
   margin-left: 15px;
 }
 
 .footer-bottom p span a {
-  color: #DEBB8F;
+  color: #debb8f;
   font-style: italic;
   text-decoration: underline;
 }
-
 
 /*************************
 ******* Home ******
@@ -393,7 +382,7 @@ padding: 0%;
 
   .item h2 {
     color: #363432;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Gotham Rounded";
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 22px;
@@ -404,7 +393,7 @@ padding: 0%;
       color:#363432;
       font-size:16px;
       font-weight:300;
-      font-family: 'Roboto', sans-serif;
+      font-family: "Gotham Rounded";
   }
 
   .get {
@@ -412,7 +401,7 @@ padding: 0%;
     border: 0 none;
     border-radius: 0;
     color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
+    font-family: '"Gotham Rounded";
     font-size: 16px;
     font-weight: 300;
     margin-top: 23px;
@@ -439,16 +428,16 @@ padding: 0%;
   }
   */
 
-
 .category-products {
-  border: 1px solid #F7F7F0;
+  border: 1px solid #f7f7f0;
   margin-bottom: 35px;
   padding-bottom: 20px;
   padding-top: 15px;
 }
-.left-sidebar h2, .brands_products h2 {
-  color: #9F5832;
-  font-family: 'Roboto', sans-serif;
+.left-sidebar h2,
+.brands_products h2 {
+  color: #9f5832;
+  font-family:"Gotham Rounded";
   font-size: 18px;
   font-weight: 700;
   margin: 0 auto 30px;
@@ -456,62 +445,63 @@ padding: 0%;
   text-transform: uppercase;
   position: relative;
   padding-top: 15px;
-  z-index:3;
+  z-index: 3;
 }
 
-.left-sidebar h2:after, h2.title:after{
-	content: " ";
-	position: absolute;
-	border: 1px solid #E7DDB4;
-	bottom:8px;
-	left: 0;
-	width: 100%;
-	height: 0;
-	z-index: -2;
+.left-sidebar h2:after,
+h2.title:after {
+  content: " ";
+  position: absolute;
+  border: 1px solid #e7ddb4;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: -2;
 }
 
-.left-sidebar h2:before{
-	content: " ";
-	position: absolute;
-	background: #ffff;
-	bottom: -6px;
-	width: 130px;
-	height: 30px;
-	z-index: -1;
-	left: 50%;
-	margin-left: -65px;
+.left-sidebar h2:before {
+  content: " ";
+  position: absolute;
+  background: #ffff;
+  bottom: -6px;
+  width: 130px;
+  height: 30px;
+  z-index: -1;
+  left: 50%;
+  margin-left: -65px;
 }
 
-h2.title:before{
-	content: " ";
-	position: absolute;
-	background: #fff;
-	bottom: -6px;
-	width: 220px;
-	height: 30px;
-	z-index: -1;
-	left: 50%;
-	margin-left: -110px;
+h2.title:before {
+  content: " ";
+  position: absolute;
+  background: #fff;
+  bottom: -6px;
+  width: 220px;
+  height: 30px;
+  z-index: -1;
+  left: 50%;
+  margin-left: -110px;
 }
 
 .category-products .panel {
-	background-color: #FFFFFF;
-	border: 0px;
-	border-radius: 0px;
-	box-shadow:none;
-	margin-bottom: 0px;
+  background-color: #ffffff;
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: none;
+  margin-bottom: 0px;
 }
 
 .category-products .panel-default .panel-heading {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 0 none;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 5px 20px;
 }
 
 .category-products .panel-default .panel-heading .panel-title a {
   color: #336064;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
@@ -522,9 +512,9 @@ h2.title:before{
 }
 
 .category-products .badge {
-  background: #E7DDB4;
+  background: #e7ddb4;
   border-radius: 10px;
-  color: #9C5233;
+  color: #9c5233;
   display: inline-block;
   font-size: 12px;
   font-weight: bold;
@@ -536,36 +526,34 @@ h2.title:before{
   white-space: nowrap;
 }
 
-.panel-body ul{
+.panel-body ul {
   padding-left: 20px;
 }
 
-
 .panel-body ul li a {
-  color: #CA6A3B;
-  font-family: 'Roboto', sans-serif;
+  color: #ca6a3b;
+  font-family:"Gotham Rounded";
   font-size: 15px;
   text-transform: uppercase;
 }
 
 .brands-name {
-  border: 1px solid #F7F7F0;
+  border: 1px solid #f7f7f0;
   padding-bottom: 20px;
   padding-top: 15px;
 }
 
-
 .brands-name .nav-stacked li a {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #696763;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   font-size: 14px;
   padding: 5px 25px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.brands-name .nav-stacked li a:hover{
+.brands-name .nav-stacked li a:hover {
   background-color: #fff;
   color: #696763;
 }
@@ -575,17 +563,15 @@ h2.title:before{
   width: 100%;
   overflow: hidden;
   padding-bottom: 85px;
-
 }
 
-
-.price-range{
-  margin-top:30px;
+.price-range {
+  margin-top: 30px;
 }
 
 .well {
-  background-color: #FFFFFF;
-  border: 1px solid #F7F7F0;
+  background-color: #ffffff;
+  border: 1px solid #f7f7f0;
   border-radius: 4px;
   box-shadow: none;
   margin-bottom: 20px;
@@ -593,11 +579,10 @@ h2.title:before{
   padding: 35px;
 }
 
-
 .tooltip-inner {
-  background-color: #9F5832;
+  background-color: #9f5832;
   border-radius: 4px;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 200px;
   padding: 3px 8px;
   text-align: center;
@@ -605,27 +590,25 @@ h2.title:before{
 }
 
 .tooltip.top .tooltip-arrow {
-  border-top-color: #9F5832;
+  border-top-color: #9f5832;
   border-width: 5px 5px 0;
   bottom: 0;
   left: 50%;
   margin-left: -5px;
 }
 
-
 .padding-right {
   padding-right: 0;
 }
 
-.features_items{
-  overflow:hidden;
+.features_items {
+  overflow: hidden;
   padding-top: 15px;
 }
 
-
 h2.title {
-  color: #9F5832;
-  font-family: 'Roboto', sans-serif;
+  color: #9f5832;
+  font-family:"Gotham Rounded";
   font-size: 18px;
   font-weight: 700;
   margin: 0 15px;
@@ -634,53 +617,52 @@ h2.title {
   position: relative;
 }
 
-.product-image-wrapper{
-	border:2px solid #E7DDB4;
-	overflow: hidden;
-	margin-bottom:30px;
+.product-image-wrapper {
+  border: 2px solid #e7ddb4;
+  overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .single-products {
   position: relative;
 }
 
-.new, .sale {
+.new,
+.sale {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-.productinfo h2{
-	color:#336064;
-	font-family: 'Roboto', sans-serif;
-	font-size: 24px;
-	font-weight: 700;
+.productinfo h2 {
+  color: #336064;
+  font-family:"Gotham Rounded";
+  font-size: 24px;
+  font-weight: 700;
 }
-.product-overlay h2{
-	color: #9F5832;
-	font-family: 'Roboto', sans-serif;
-	font-size: 24px;
-	font-weight: 700;
+.product-overlay h2 {
+  color: #9f5832;
+  font-family:"Gotham Rounded";
+  font-weight: 700;
 }
 
-
-.productinfo p{
-  font-family: 'Roboto', sans-serif;
+.productinfo p {
+  font-family:"Gotham Rounded";
   font-size: 14px;
   font-weight: 400;
-  color: #9F5832;
+  color: #9f5832;
 }
 
-.productinfo img{
+.productinfo img {
   width: 100%;
 }
 
-.productinfo{
- position:relative;
+.productinfo {
+  position: relative;
 }
 
 .product-overlay {
-  background:#9F5832;
+  background: #9f5832;
   top: 0;
   display: none;
   height: 0;
@@ -691,10 +673,9 @@ h2.title {
 }
 
 .single-products:hover .product-overlay {
-  display:block;
-  height:100%;
+  display: block;
+  height: 100%;
 }
-
 
 .product-overlay .overlay-content {
   bottom: 0;
@@ -705,79 +686,76 @@ h2.title {
 }
 
 .product-overlay .add-to-cart {
-  background:#fff;
+  background: #fff;
   border: 0 none;
   border-radius: 0;
-  color: #9F5832;
-  font-family: 'Roboto', sans-serif;
+  color: #9f5832;
+  font-family:"Gotham Rounded";
   font-size: 15px;
   margin-bottom: 25px;
 }
 
 .product-overlay .add-to-cart:hover {
-  background:#fff;
-  color: #9F5832;
+  background: #fff;
+  color: #9f5832;
 }
 
-
-.product-overlay p{
-  font-family: 'Roboto', sans-serif;
+.product-overlay p {
+  font-family:"Gotham Rounded";
   font-size: 14px;
   font-weight: 400;
   color: #fff;
 }
 
-
-
 .add-to-cart {
-  background:#9F5832;
+  background: #9f5832;
   border: 0 none;
   border-radius: 0;
-  color: #F5F5ED;
-  font-family: 'Roboto', sans-serif;
+  color: #f5f5ed;
+  font-family:"Gotham Rounded";
   font-size: 15px;
   margin-bottom: 25px;
 }
 
 .add-to-cart:hover {
-  background: #9F5832;
+  background: #9f5832;
   border: 0 none;
   border-radius: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.add-to{
+.add-to {
   margin-bottom: 10px;
 }
 
-.add-to-cart i{
-	margin-right:5px;
+.add-to-cart i {
+  margin-right: 5px;
 }
 
 .add-to-cart:hover {
-  background: #9F5832;
-  color: #FFFFFF;
+  background: #9f5832;
+  color: #ffffff;
 }
 
 .choose {
-  border-top: 3px solid #F7F7F0;
+  border-top: 3px solid #f7f7f0;
 }
 
 .choose ul li a {
   color: #336064;
-  font-family: 'Roboto', sans-serif;
-  font-size: 13px;
+  font-family:"Gotham Rounded";
+  font-size: 12px;
   padding-left: 0;
   padding-right: 0;
 }
 
-.choose ul li a i{
-	margin-right:5px;
+.choose ul li a i {
+  margin-right: 5px;
 }
 
-.choose ul li a:hover{
-	background:none;
-	color:#9F5832;
+.choose ul li a:hover {
+  background: none;
+  color: #9f5832;
 }
 /********************************
 ********************************
@@ -802,7 +780,7 @@ h2.title {
   border-radius: 0;
   color: #9F5832;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Gotham Rounded";
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -882,7 +860,6 @@ h2.title {
 *******Shop CSS******
 **************************/
 
-
 #advertisement {
   padding-bottom: 45px;
 }
@@ -898,26 +875,34 @@ h2.title {
   padding-left: 15px;
 }
 
-.pagination  li:first-child  a, .pagination  li:first-child  span {
+.pagination li:first-child a,
+.pagination li:first-child span {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: 0;
 }
 
-.pagination  li:last-child  a, .pagination  li:last-child  span {
+.pagination li:last-child a,
+.pagination li:last-child span {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.pagination  .active  a, .pagination  .active  span, .pagination  .active  a:hover, .pagination  .active  span:hover, .pagination  .active  a:focus, .pagination  .active  span:focus {
-  background-color: #9F5832;
-  border-color: #9F5832;
-  color: #FFFFFF;
+.pagination .active a,
+.pagination .active span,
+.pagination .active a:hover,
+.pagination .active span:hover,
+.pagination .active a:focus,
+.pagination .active span:focus {
+  background-color: #9f5832;
+  border-color: #9f5832;
+  color: #ffffff;
   cursor: default;
   z-index: 2;
 }
 
-.pagination  li  a, .pagination  li  span {
+.pagination li a,
+.pagination li span {
   background-color: #f0f0e9;
   border: 0;
   float: left;
@@ -927,29 +912,25 @@ h2.title {
   position: relative;
   text-decoration: none;
   margin-right: 5px;
-  color:#000;
+  color: #000;
 }
 
-.pagination  li  a:hover{
-	background:#9F5832;
-	color:#fff;
+.pagination li a:hover {
+  background: #9f5832;
+  color: #fff;
 }
-
-
 
 /*************************
 *******Product Details CSS******
 **************************/
 
-.product-details{
-	overflow:hidden;
+.product-details {
+  overflow: hidden;
 }
-
 
 #similar-product {
   margin-top: 40px;
 }
-
 
 #reviews {
   padding-left: 25px;
@@ -962,23 +943,21 @@ h2.title {
   margin-top: 10px;
 }
 
-
-
 .view-product {
   position: relative;
 }
 
 .view-product img {
-  border: 1px solid #F7F7F0;
+  border: 1px solid #f7f7f0;
   height: 380px;
   width: 100%;
 }
 
 .view-product h3 {
-  background: #9F5832;
+  background: #9f5832;
   bottom: 0;
-  color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-family:"Gotham Rounded";
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 0;
@@ -987,8 +966,8 @@ h2.title {
   right: 0;
 }
 
-#similar-product .carousel-inner .item{
-	padding-left:0px;
+#similar-product .carousel-inner .item {
+  padding-left: 0px;
 }
 
 #similar-product .carousel-inner .item img {
@@ -1001,18 +980,18 @@ h2.title {
   top: 35%;
 }
 .item-control i {
-  background: #9F5832;
-  color: #FFFFFF;
+  background: #9f5832;
+  color: #ffffff;
   font-size: 20px;
   padding: 5px 10px;
 }
 
-.item-control i:hover{
-	background:#ccccc6;
+.item-control i:hover {
+  background: #ccccc6;
 }
 
 .product-information {
-  border: 1px solid #F7F7F0;
+  border: 1px solid #f7f7f0;
   overflow: hidden;
   padding-bottom: 60px;
   padding-left: 60px;
@@ -1020,22 +999,22 @@ h2.title {
   position: relative;
 }
 
-.newarrival{
-	position:absolute;
-	top:0;
-	left:0
+.newarrival {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .product-information h2 {
   color: #363432;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   font-size: 20px;
   margin-top: 0;
 }
 
 .product-information p {
   color: #696763;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   margin-bottom: 5px;
 }
 
@@ -1046,18 +1025,18 @@ h2.title {
 }
 
 .product-information span span {
-  color: #9F5832;
+  color: #9f5832;
   float: left;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   font-size: 30px;
   font-weight: 700;
   margin-right: 20px;
   margin-top: 0px;
 }
 .product-information span input {
-  border: 1px solid #DEDEDC;
+  border: 1px solid #dededc;
   color: #696763;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   font-size: 20px;
   font-weight: 700;
   height: 33px;
@@ -1068,7 +1047,7 @@ h2.title {
 
 .product-information span label {
   color: #696763;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   font-weight: 700;
   margin-right: 5px;
 }
@@ -1077,75 +1056,72 @@ h2.title {
   margin-top: 15px;
 }
 
-
 .cart {
-  background: #9F5832;
+  background: #9f5832;
   border: 0 none;
   border-radius: 0;
-  color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-family:"Gotham Rounded";
   font-size: 15px;
   margin-bottom: 10px;
   margin-left: 20px;
 }
 
-
 .shop-details-tab {
-  border: 1px solid #F7F7F0;
+  border: 1px solid #f7f7f0;
   margin-bottom: 75px;
   margin-left: 15px;
   margin-right: 15px;
   padding-bottom: 10px;
 }
 .shop-details-tab .col-sm-12 {
-	padding-left: 0;
-	padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-
 #reviews ul {
-  background: #FFFFFF;
+  background: #ffffff;
   border: 0 none;
   list-style: none outside none;
   margin: 0 0 20px;
   padding: 0;
 }
 
-#reviews  ul  li {
-	display:inline-block;
+#reviews ul li {
+  display: inline-block;
 }
 
 #reviews ul li a {
   color: #696763;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   font-size: 14px;
   padding-right: 15px;
 }
 
-#reviews ul li a i{
-	color:#9F5832;
-	padding-right:8px;
+#reviews ul li a i {
+  color: #9f5832;
+  padding-right: 8px;
 }
 
-#reviews ul li a:hover{
-	background:#fff;
-	color:#9F5832;
+#reviews ul li a:hover {
+  background: #fff;
+  color: #9f5832;
 }
 
-#reviews p{
-	color:#363432;
+#reviews p {
+  color: #363432;
 }
 
-#reviews  form span {
+#reviews form span {
   display: block;
 }
 
 #reviews form span input {
-  background:#F0F0E9;
+  background: #f0f0e9;
   border: 0 none;
-  color: #A6A6A1;
-  font-family: 'Roboto', sans-serif;
+  color: #a6a6a1;
+  font-family:"Gotham Rounded";
   font-size: 14px;
   outline: medium none;
   padding: 8px;
@@ -1156,9 +1132,9 @@ h2.title {
 }
 
 #reviews textarea {
-  background: #F0F0E9;
+  background: #f0f0e9;
   border: medium none;
-  color: #A6A6A1;
+  color: #a6a6a1;
   height: 195px;
   margin-bottom: 25px;
   margin-top: 15px;
@@ -1170,14 +1146,13 @@ h2.title {
 }
 
 #reviews button {
-  background: #9F5832;
+  background: #9f5832;
   border: 0 none;
   border-radius: 0;
-  color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-family:"Gotham Rounded";
   font-size: 14px;
 }
-
 
 /*************************
 *******404 CSS******
@@ -1189,34 +1164,33 @@ h2.title {
 
 .content-404 h1 {
   color: #363432;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   font-size: 41px;
   font-weight: 300;
 }
 
 .content-404 img {
- margin:0 auto;
+  margin: 0 auto;
 }
 
 .content-404 p {
   color: #363432;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   font-size: 18px;
 }
 
-.content-404  h2 {
-  margin-top:50px;
+.content-404 h2 {
+  margin-top: 50px;
 }
 
 .content-404 h2 a {
-  background: #9F5832;
-  color: #FFFFFF;
-  font-family: 'Roboto', sans-serif;
+  background: #9f5832;
+  color: #ffffff;
+  font-family:"Gotham Rounded";
   font-size: 44px;
   font-weight: 300;
   padding: 8px 40px;
 }
-
 
 /*************************
 *******login page CSS******
@@ -1229,22 +1203,22 @@ h2.title {
   overflow: hidden;
 }
 
-
-.login-form h2, .signup-form h2 {
+.login-form h2,
+.signup-form h2 {
   color: #696763;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 30px;
 }
 
-
-.login-form form input, .signup-form form input {
-  background: #F0F0E9;
+.login-form form input,
+.signup-form form input {
+  background: #f0f0e9;
   border: medium none;
   color: #696763;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   font-size: 14px;
   font-weight: 300;
   height: 40px;
@@ -1254,7 +1228,7 @@ h2.title {
   width: 100%;
 }
 
-.login-form form span{
+.login-form form span {
   line-height: 25px;
 }
 
@@ -1269,13 +1243,14 @@ h2.title {
   margin-top: 23px;
 }
 
-.login-form form button, .signup-form form button {
-  background: #9F5832;
+.login-form form button,
+.signup-form form button {
+  background: #9f5832;
   border: medium none;
   border-radius: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   padding: 6px 25px;
 }
 
@@ -1288,20 +1263,17 @@ h2.title {
   padding-left: 0;
 }
 
-
-.or{
-	background: #9F5832;
-	border-radius: 40px;
-	color: #FFFFFF;
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	height: 50px;
-	line-height: 50px;
-	margin-top: 75px;
-	text-align: center;
-	width: 50px;
+.or {
+  background: #9f5832;
+  border-radius: 40px;
+  color: #ffffff;
+  font-family:"Gotham Rounded";
+  height: 50px;
+  line-height: 50px;
+  margin-top: 75px;
+  text-align: center;
+  width: 50px;
 }
-
 
 /*************************
 *******Cart CSS******
@@ -1316,28 +1288,27 @@ h2.title {
 }
 
 .breadcrumbs .breadcrumb {
-  background:transparent;
+  background: transparent;
   margin-bottom: 75px;
   padding-left: 0;
 }
 
 .breadcrumbs .breadcrumb li a {
-  background:#9F5832;
-  color: #FFFFFF;
+  background: #9f5832;
+  color: #ffffff;
   padding: 3px 7px;
 }
 
 .breadcrumbs .breadcrumb li a:after {
-  content:"";
-  height:auto;
+  content: "";
+  height: auto;
   width: auto;
   border-width: 8px;
   border-style: solid;
-  border-color:transparent transparent transparent #9F5832;
+  border-color: transparent transparent transparent #9f5832;
   position: absolute;
   top: 11px;
-  left:48px;
-
+  left: 48px;
 }
 
 .breadcrumbs .breadcrumb > li + li:before {
@@ -1345,16 +1316,15 @@ h2.title {
 }
 
 #cart_items .cart_info {
-  border: 1px solid #E6E4DF;
-  margin-bottom: 50px
+  border: 1px solid #e6e4df;
+  margin-bottom: 50px;
 }
 
-
 #cart_items .cart_info .cart_menu {
-  background: #9F5832;
+  background: #9f5832;
   color: #fff;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   font-weight: normal;
 }
 
@@ -1362,13 +1332,12 @@ h2.title {
   height: 51px;
 }
 
-
 #cart_items .cart_info .table.table-condensed tr {
-  border-bottom: 1px solid#F7F7F0
+  border-bottom: 1px solid#F7F7F0;
 }
 
 #cart_items .cart_info .table.table-condensed tr:last-child {
-  border-bottom: 0
+  border-bottom: 0;
 }
 
 .cart_info table tr td {
@@ -1376,37 +1345,32 @@ h2.title {
   vertical-align: inherit;
 }
 
-
 #cart_items .cart_info .image {
   padding-left: 30px;
 }
 
-
 #cart_items .cart_info .cart_description h4 {
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 #cart_items .cart_info .cart_description h4 a {
   color: #363432;
-  font-family: 'Roboto',sans-serif;
+  font-family:"Gotham Rounded";
   font-size: 20px;
   font-weight: normal;
-
 }
 
 #cart_items .cart_info .cart_description p {
-  color:#696763
+  color: #696763;
 }
-
 
 #cart_items .cart_info .cart_price p {
-  color:#696763;
-  font-size: 18px
+  color: #696763;
+  font-size: 18px;
 }
 
-
 #cart_items .cart_info .cart_total_price {
-  color: #9F5832;
+  color: #9f5832;
   font-size: 24px;
 }
 
@@ -1416,7 +1380,7 @@ h2.title {
 }
 
 .cart_quantity_button a {
-  background:#F0F0E9;
+  background: #f0f0e9;
   color: #696763;
   display: inline-block;
   font-size: 16px;
@@ -1426,46 +1390,41 @@ h2.title {
   width: 35px;
 }
 
-
 .cart_quantity_input {
   color: #696763;
   float: left;
   font-size: 16px;
   text-align: center;
-  font-family: 'Roboto',sans-serif;
-
+  font-family:"Gotham Rounded";
 }
 
-
-.cart_delete  {
+.cart_delete {
   display: block;
   margin-right: -12px;
   overflow: hidden;
 }
 
-
 .cart_delete a {
-  background:#F0F0E9;
-  color: #FFFFFF;
+  background: #f0f0e9;
+  color: #ffffff;
   padding: 5px 7px;
-  font-size: 16px
+  font-size: 16px;
 }
 
 .cart_delete a:hover {
-  background:#9F5832
+  background: #9f5832;
 }
 
-
 .bg h2.title {
-  margin-right:0;
-  margin-left:0;
+  margin-right: 0;
+  margin-left: 0;
   margin-top: 0;
 }
 
 .heading h3 {
   color: #363432;
   font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
 }
 
 .heading p {
@@ -1474,13 +1433,13 @@ h2.title {
   font-weight: 300;
 }
 
-
 #do_action .total_area {
   padding-bottom: 18px !important;
 }
 
-#do_action .total_area, #do_action .chose_area {
-  border: 1px solid #E6E4DF;
+#do_action .total_area,
+#do_action .chose_area {
+  border: 1px solid #e6e4df;
   color: #696763;
   padding: 30px 25px 30px 0;
   margin-bottom: 80px;
@@ -1491,19 +1450,17 @@ h2.title {
 }
 
 .total_area ul li {
-  background:#E6E4DF;
+  background: #e6e4df;
   color: #696763;
   margin-top: 10px;
   padding: 7px 20px;
 }
-
 
 .user_option label {
   color: #696763;
   font-weight: normal;
   margin-left: 10px;
 }
-
 
 .user_info {
   display: block;
@@ -1517,89 +1474,87 @@ h2.title {
   display: block;
   font-size: 15px;
   font-weight: normal;
-
 }
 
 .user_info .single_field {
-  width: 31%
+  width: 31%;
 }
 
 .user_info .single_field.zip-field input {
   background: transparent;
-  border: 1px solid#F0F0E9
+  border: 1px solid#F0F0E9;
 }
 
 .user_info > li {
   float: left;
-  margin-right: 10px
+  margin-right: 10px;
 }
 
-
-.user_info input, select, textarea {
-  background: #F0F0E9;
-  border:0;
+.user_info input,
+select,
+textarea {
+  background: #f0f0e9;
+  border: 0;
   color: #696763;
   padding: 5px;
   width: 100%;
   border-radius: 0;
-  resize: none
+  resize: none;
 }
 
 .user_info select:focus {
-  border: 0
+  border: 0;
 }
-
 
 .chose_area .update {
   margin-left: 40px;
 }
 
-.update, .check_out {
-  background: #9F5832;
+.update,
+.check_out {
+  background: #9f5832;
   border-radius: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 18px;
   border: none;
   padding: 5px 15px;
 }
-.update{
-    margin-left: 40px;
+.update {
+  margin-left: 40px;
 }
 
 .check_out {
-  margin-left: 20px
+  margin-left: 20px;
 }
-
-
 
 /*************************
 *******checkout CSS******
 **************************/
 
 .step-one {
-  margin-bottom: -10px
+  margin-bottom: -10px;
 }
 
-.register-req, .step-one .heading {
-  background: none repeat scroll 0 0 #F0F0E9;
+.register-req,
+.step-one .heading {
+  background: none repeat scroll 0 0 #f0f0e9;
   color: #363432;
   font-size: 20px;
   margin-bottom: 35px;
   padding: 10px 25px;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
 }
 
 .checkout-options {
-  padding-left: 20px
+  padding-left: 20px;
 }
-
 
 .checkout-options h3 {
   color: #363432;
   font-size: 20px;
   margin-bottom: 0;
   font-weight: normal;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
 }
 
 .checkout-options p {
@@ -1613,7 +1568,7 @@ h2.title {
   margin-right: 45px;
   color: #696763;
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   font-weight: normal;
 }
 
@@ -1622,10 +1577,10 @@ h2.title {
 }
 
 .checkout-options .nav li a {
-  color: #9F5832;
+  color: #9f5832;
   font-size: 18px;
   font-weight: normal;
-  padding: 0
+  padding: 0;
 }
 
 .checkout-options .nav li a:hover {
@@ -1636,71 +1591,64 @@ h2.title {
   margin-right: 10px;
   border-radius: 50%;
   padding: 5px;
-  background: #9F5832;
-  color:#fff;
+  background: #9f5832;
+  color: #fff;
   font-size: 14px;
   padding: 2px 3px;
 }
 
-
-.register-req  {
+.register-req {
   font-size: 14px;
   font-weight: 300;
   padding: 15px 20px;
   margin-top: 35px;
-
 }
 
 .register-req p {
-  margin-bottom: 0
+  margin-bottom: 0;
 }
-
-
 
 .shopper-info p,
 .bill-to p,
 .order-message p {
   color: #696763;
   font-size: 20px;
-  font-weight: 300
+  font-weight: 300;
 }
 
-
 .shopper-info .btn-primary {
-  background: #9F5832;
+  background: #9f5832;
   border: 0 none;
   border-radius: 0;
   margin-right: 15px;
   margin-top: 20px;
 }
 
-
-.form-two, .form-one {
+.form-two,
+.form-one {
   float: left;
-  width: 47%
+  width: 47%;
 }
-
 
 .shopper-info > form > input,
 .form-two > form > select,
 .form-two > form > input,
 .form-one > form > input {
-  background:#F0F0E9;
+  background: #f0f0e9;
   border: 0 none;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   padding: 10px;
   width: 100%;
-  font-weight: 300
+  font-weight: 300;
 }
 
 .form-two > form > select {
-  padding:10px 5px
+  padding: 10px 5px;
 }
 
 .form-two {
-  margin-left: 5%
+  margin-left: 5%;
 }
-
 
 .order-message textarea {
   font-size: 12px;
@@ -1710,25 +1658,24 @@ h2.title {
 }
 
 .order-message label {
-  font-weight:300;
+  font-weight: 300;
   color: #696763;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gotham Rounded";
   margin-left: 10px;
-  font-size: 14px
+  font-size: 14px;
 }
-
 
 .review-payment h2 {
   color: #696763;
   font-size: 20px;
   font-weight: 300;
   margin-top: 45px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 .payment-options {
-  margin-bottom:125px;
-  margin-top: -25px
+  margin-bottom: 125px;
+  margin-top: -25px;
 }
 
 .payment-options span label {
@@ -1738,78 +1685,62 @@ h2.title {
   margin-right: 30px;
 }
 
-#cart_items .cart_info
-.table.table-condensed.total-result {
+#cart_items .cart_info .table.table-condensed.total-result {
   margin-bottom: 10px;
   margin-top: 35px;
-  color: #696763
+  color: #696763;
 }
 
-#cart_items .cart_info
-.table.table-condensed.total-result tr {
-  border-bottom: 0
+#cart_items .cart_info .table.table-condensed.total-result tr {
+  border-bottom: 0;
 }
 
-#cart_items .cart_info
-.table.table-condensed.total-result span {
-  color: #9F5832;
+#cart_items .cart_info .table.table-condensed.total-result span {
+  color: #9f5832;
   font-weight: 700;
-  font-size: 16px
+  font-size: 16px;
 }
 
-#cart_items .cart_info
-.table.table-condensed.total-result
-.shipping-cost {
-  border-bottom: 1px solid #F7F7F0;
+#cart_items .cart_info .table.table-condensed.total-result .shipping-cost {
+  border-bottom: 1px solid #f7f7f0;
 }
-
-
-
 
 /*************************
 *******Blog CSS******
 **************************/
 
-
-
-.blog-post-area
-.single-blog-post h3 {
+.blog-post-area .single-blog-post h3 {
   color: #696763;
   font-size: 16px;
-  font-family: 'Roboto',sans-serif;
+  font-family:"Gotham Rounded";
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 17px;
 }
 
-.blog-post-area
-.single-blog-post a img {
-  border: 1px solid #F7F7F0;
+.blog-post-area .single-blog-post a img {
+  border: 1px solid #f7f7f0;
   width: 100%;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
-.blog-post-area
-.single-blog-post p {
-  color: #363432
+.blog-post-area .single-blog-post p {
+  color: #363432;
 }
 
-.blog-post-area
-.post-meta {
+.blog-post-area .post-meta {
   display: block;
   margin-bottom: 25px;
   overflow: hidden;
 }
 
-.blog-post-area
-.post-meta ul {
-  padding:0;
+.blog-post-area .post-meta ul {
+  padding: 0;
   display: inline;
 }
 
-.blog-post-area
-.post-meta ul li {
-  background:#F0F0E9;
+.blog-post-area .post-meta ul li {
+  background: #f0f0e9;
   float: left;
   margin-right: 10px;
   padding: 0 5px;
@@ -1818,63 +1749,55 @@ h2.title {
   position: relative;
 }
 
-.blog-post-area
-.post-meta ul li i {
-  background:#9F5832;
-  color: #FFFFFF;
+.blog-post-area .post-meta ul li i {
+  background: #9f5832;
+  color: #ffffff;
   margin-left: -4px;
   margin-right: 7px;
   padding: 4px 7px;
 }
 
 .sinlge-post-meta li i:after,
-.blog-post-area
-.post-meta ul li i:after {
+.blog-post-area .post-meta ul li i:after {
   content: "";
   position: absolute;
   width: auto;
   height: auto;
-  border-color:transparent transparent transparent #9F5832;
-  border-width:4px;
+  border-color: transparent transparent transparent #9f5832;
+  border-width: 4px;
   border-style: solid;
-  top:6px;
-  left:24px
+  top: 6px;
+  left: 24px;
 }
 
-.blog-post-area
-.post-meta ul span {
+.blog-post-area .post-meta ul span {
   float: right;
-  color: #9F5832
+  color: #9f5832;
 }
 
-.post-meta span{
-    float: right;
+.post-meta span {
+  float: right;
 }
 
-.post-meta span i{
-  color: #9F5832
+.post-meta span i {
+  color: #9f5832;
 }
 
-
-.blog-post-area
-.single-blog-post
-.btn-primary {
-  background:#9F5832;
+.blog-post-area .single-blog-post .btn-primary {
+  background: #9f5832;
   border: medium none;
   border-radius: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 17px;
 }
 
-
 .pagination-area {
-  margin-bottom:45px;
-  margin-top:45px
+  margin-bottom: 45px;
+  margin-top: 45px;
 }
 
-.pagination-area
-.pagination li a {
-  background:#F0F0E9;
+.pagination-area .pagination li a {
+  background: #f0f0e9;
   border: 0 none;
   border-radius: 0;
   color: #696763;
@@ -1882,15 +1805,11 @@ h2.title {
   padding: 4px 12px;
 }
 
-.pagination-area
-.pagination li a:hover,
-.pagination-area
-.pagination li .active {
-  background:#9F5832;
-  color: #fff
+.pagination-area .pagination li a:hover,
+.pagination-area .pagination li .active {
+  background: #9f5832;
+  color: #fff;
 }
-
-
 
 /*************************
 *******Blog Single CSS******
@@ -1901,7 +1820,7 @@ h2.title {
 }
 
 .pager-area .pager li a {
-  background:#F0F0E9;
+  background: #f0f0e9;
   border: 0 none;
   border-radius: 0;
   color: #696763;
@@ -1912,14 +1831,13 @@ h2.title {
   width: 57px;
 }
 
-.pager-area
-.pager li a:hover {
-  background: #9F5832;
-  color: #fff
+.pager-area .pager li a:hover {
+  background: #9f5832;
+  color: #fff;
 }
 
 .rating-area {
-  border: 1px solid #F7F7F0;
+  border: 1px solid #f7f7f0;
   direction: block;
   overflow: hidden;
 }
@@ -1927,19 +1845,17 @@ h2.title {
 .rating-area ul li {
   float: left;
   padding: 5px;
-  font-size: 12px
+  font-size: 12px;
 }
 
 .rating-area .ratings {
   float: left;
   padding-left: 0;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
-
-.rating-area
-.ratings li i {
-  color:#CCCCCC
+.rating-area .ratings li i {
+  color: #cccccc;
 }
 
 .rating-area .rate-this {
@@ -1949,12 +1865,10 @@ h2.title {
   text-transform: uppercase;
 }
 
-.rating-area
-.ratings .color,
+.rating-area .ratings .color,
 .rating-area .color {
-  color: #9F5832
+  color: #9f5832;
 }
-
 
 .rating-area .tag {
   float: right;
@@ -1969,41 +1883,38 @@ h2.title {
   color: #363432;
 }
 
-
 .socials-share {
   margin-bottom: 30px;
   margin-top: 18px;
 }
 
-
-.commnets
-.media-object {
+.commnets .media-object {
   margin-right: 15px;
   width: 100%;
 }
 
 .commnets {
-  border: 1px solid #F7F7F0;
+  border: 1px solid #f7f7f0;
   padding: 18px 18px 18px 0;
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 
 .commnets .pull-left {
-  margin-right: 22px
+  margin-right: 22px;
 }
 
 .commnets p,
 .response-area p,
 .replay-box p {
-  font-size: 12px
+  font-size: 12px;
 }
 
 .media-heading {
   color: #363432;
   font-size: 14px;
   font-weight: 700;
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 15px
+  font-family:"Gotham Rounded";
+  margin-bottom: 15px;
 }
 
 .blog-socials {
@@ -2017,12 +1928,11 @@ h2.title {
   float: left;
 }
 
-.blog-socials .btn.btn-primary{
+.blog-socials .btn.btn-primary {
   margin-top: 0;
 }
 
 .blog-socials ul li {
-
   float: left;
   height: 17px;
   margin-right: 5px;
@@ -2030,27 +1940,25 @@ h2.title {
   width: 17px;
 }
 
-
 .blog-socials ul li a {
-  color: #393B3B;
+  color: #393b3b;
   display: block;
   font-size: 10px;
   padding: 1px;
-  background:#F0F0E9;
+  background: #f0f0e9;
 }
 
 .blog-socials ul li a:hover {
   color: #fff;
-  background:#9F5832
+  background: #9f5832;
 }
-
 
 .media-list .btn-primary,
 .commnets .btn-primary {
-  background:#FC9A11;
+  background: #fc9a11;
   border: 0 none;
   border-radius: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   float: left;
   font-size: 10px;
   padding: 1px 7px;
@@ -2064,18 +1972,18 @@ h2.title {
 }
 
 .response-area .media {
-  border: 1px solid #F7F7F0;
+  border: 1px solid #f7f7f0;
   padding: 18px 18px 18px 0;
-  margin-bottom: 27px
+  margin-bottom: 27px;
 }
 
-.response-area .media img{
+.response-area .media img {
   height: 102px;
   width: 100%;
 }
 
 .response-area .media .pull-left {
-  margin-right: 25px
+  margin-right: 25px;
 }
 
 .response-area .second-media {
@@ -2083,17 +1991,14 @@ h2.title {
   width: 95%;
 }
 
-
 .sinlge-post-meta {
   overflow: hidden;
   padding-left: 0;
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
-
-
 .sinlge-post-meta li {
-  background:#F0F0E9;
+  background: #f0f0e9;
   color: #363432;
   float: left;
   font-size: 10px;
@@ -2105,8 +2010,8 @@ h2.title {
 }
 
 .sinlge-post-meta li i {
-  background:#9F5832;
-  color: #FFFFFF;
+  background: #9f5832;
+  color: #ffffff;
   margin-right: 10px;
   padding: 8px 10px;
 }
@@ -2116,7 +2021,6 @@ h2.title {
   border-width: 6px;
   left: 27px;
 }
-
 
 .replay-box {
   margin-bottom: 107px;
@@ -2128,12 +2032,12 @@ h2.title {
   font-size: 20px;
   color: #363432;
   margin-top: 0;
-  margin-bottom: 45px
+  margin-bottom: 45px;
 }
 
 .replay-box label {
-  background:#9F5832;
-  color: #FFFFFF;
+  background: #9f5832;
+  color: #ffffff;
   margin-bottom: 15px;
   padding: 3px 15px;
   float: left;
@@ -2141,15 +2045,15 @@ h2.title {
 }
 
 .replay-box span {
-  color: #9F5832;
+  color: #9f5832;
   float: right;
   font-weight: 700;
   margin-top: 21px;
 }
 
 .replay-box form input {
-  border: 1px solid #F7F7F0;
-  color: #ADB2B2;
+  border: 1px solid #f7f7f0;
+  color: #adb2b2;
   font-size: 12px;
   margin-bottom: 22px;
   padding: 8px;
@@ -2158,20 +2062,20 @@ h2.title {
 
 .replay-box form input:hover,
 .text-area textarea:hover {
-  border: 1px solid #9F5832;
+  border: 1px solid #9f5832;
 }
 
 .text-area {
-  margin-top: 66px
+  margin-top: 66px;
 }
 
 .text-area textarea {
   background: transparent;
-  border: 1px solid#F7F7F0
+  border: 1px solid#F7F7F0;
 }
 
 .btn.btn-primary {
-  background:#9F5832;
+  background: #9f5832;
   border: 0 none;
   border-radius: 0;
   margin-top: 16px;
@@ -2188,12 +2092,10 @@ h2.title {
   height: auto;
   border-style: solid;
   border-width: 8px;
-  border-color:#9F5832 transparent transparent transparent;
+  border-color: #9f5832 transparent transparent transparent;
   top: 25px;
-  left: 5px
+  left: 5px;
 }
-
-
 
 /*************************
 ******* Contact CSS ********
@@ -2202,7 +2104,7 @@ h2.title {
 .contact-map {
   width: 100%;
   height: 385px;
-  margin-bottom: 70px
+  margin-bottom: 70px;
 }
 
 .contact-info .heading,
@@ -2214,9 +2116,8 @@ h2.title {
   margin-bottom: 20px;
 }
 
-#contact-page
-.form-control::-moz-placeholder {
-  color: #8D8D8D;
+#contact-page .form-control::-moz-placeholder {
+  color: #8d8d8d;
 }
 
 #contact-page .form-control {
@@ -2228,12 +2129,12 @@ h2.title {
   width: 100%;
   font-size: 16px;
   border-radius: 4px;
-  box-shadow:inherit;
+  box-shadow: inherit;
 }
 
 #contact-page #message {
-  height:160px;
-  resize:none;
+  height: 160px;
+  resize: none;
 }
 
 #main-contact-form .btn-primary {
@@ -2241,11 +2142,10 @@ h2.title {
   margin-top: 20px;
 }
 
-
 #contact-page .form-control:focus,
 #contact-page .form-control:hover {
   box-shadow: inherit;
-  border-color: #9F5832;
+  border-color: #9f5832;
 }
 
 #contact-page .contact-info {
@@ -2264,7 +2164,7 @@ h2.title {
   line-height: 25px;
 }
 
-.social-networks{
+.social-networks {
   overflow: hidden;
   text-align: center;
 }
@@ -2282,7 +2182,7 @@ h2.title {
   margin-right: 20px;
 }
 
-.social-networks ul li:last-child{
+.social-networks ul li:last-child {
   margin-right: 0;
 }
 
@@ -2291,19 +2191,18 @@ h2.title {
   font-size: 25px;
 }
 
-.contact-info .social-networks ul li a i{
+.contact-info .social-networks ul li a i {
   background: none;
 }
 
-.contact-info .social-networks ul li a:hover{
-  color: #9F5832;
+.contact-info .social-networks ul li a:hover {
+  color: #9f5832;
 }
 
-
-.form-group{
-width:100%;
-height:auto;
-padding:24px 0;
-margin:10px 0;
-position: relative;
+.form-group {
+  width: 100%;
+  height: auto;
+  padding: 24px 0;
+  margin: 10px 0;
+  position: relative;
 }

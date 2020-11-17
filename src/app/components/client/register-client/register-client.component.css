@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("http://fonts.cdnfonts.com/css/gotham-rounded");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 input {
-  font-family: "Poppins", sans-serif;
+  font-family: "Gotham Rounded", sans-serif;
 }
 
 .container {
@@ -56,41 +56,41 @@ form {
   margin-bottom: 30px;
 }
 
-input{
+input {
   background-color: #f0f0f0;
   border: 2px solid #7c7cff7c;
   border-radius: 25px;
   padding: 10px;
-  font-size:16px;
+  font-size: 16px;
   margin: 10px;
 }
 
- .form-row{
+.form-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
- .form-row .form-group{
+.form-row .form-group {
   width: 48%;
   float: left;
 }
- .input-50:focus{
-  border-left: 8px solid #9F5832;
+.input-50:focus {
+  border-left: 8px solid #9f5832;
 }
 
- .input-100{
-  margin-right:200px;
+.input-100 {
+  margin-right: 200px;
   width: 100%;
 }
- .input-100:focus{
-  border-left: 8px solid #9F5832;
+.input-100:focus {
+  border-left: 8px solid #9f5832;
 }
 
 .social-text {
   padding: 0.7rem 0;
   font-size: 1.8rem;
-  color: #9F5832;
+  color: #9f5832;
 }
 
 .social-media {
@@ -122,7 +122,7 @@ input{
 
 .btn {
   width: 150px;
-  background-color: #9F5832;
+  background-color: #9f5832;
   border: none;
   outline: none;
   height: 49px;
@@ -137,7 +137,7 @@ input{
 
 .btn:hover {
   background-color: #e8ddb5;
-  color: #9F5832;
+  color: #9f5832;
 }
 
 .panels-container {
@@ -195,13 +195,13 @@ input{
   font-weight: 600;
   line-height: 1;
   font-size: 3.5rem;
-  color: #9F5832;
+  color: #9f5832;
 }
 
 .panel p {
   font-size: 1.2rem;
   padding: 0.7rem 0;
-  color: #9F5832;
+  color: #9f5832;
 }
 
 .container.sign-up-mode:before {
@@ -209,13 +209,9 @@ input{
   right: 52%;
 }
 
-
 .container.sign-up-mode .signin-signup {
   left: 25%;
 }
-
-
-
 
 @media (max-width: 870px) {
   .container {
@@ -326,15 +322,15 @@ input{
   }
 }
 
-.register-container .txt{
+.register-container .txt {
   margin-left: 10px;
 }
-.register-container .input-50{
+.register-container .input-50 {
   width: 98%;
 }
-.register-container .input-50:last-child{
+.register-container .input-50:last-child {
   width: 88%;
 }
-.register-container .input-100{
+.register-container .input-100 {
   width: 88%;
 }
