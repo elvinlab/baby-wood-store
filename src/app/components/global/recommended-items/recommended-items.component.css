@@ -42,7 +42,7 @@ img {
     min-width: 35rem;
     max-width: 35rem;
     height: 30rem;
-    transform: translateX(-6rem);/* para mover la imagen y darle efecto de 3D */
+    transform: translateX(-8rem);/* para mover la imagen y darle efecto de 3D */
     position: relative;
 }
 .card-image img {
@@ -83,18 +83,24 @@ img {
     
 }
 
-@media screen and (max-width:1068px){
-    .card{
-        max-width: 80rem;
+@media (min-width: 992px) and (max-width: 1199px) {
+    .recommended_items{
         flex-direction:column;
+    }
+    .card-post{
+        max-width: 80rem;
     }
     .card-image{
         min-width: 30rem;
         max-width: 30rem;
     }
 }
-@media screen and (max-width:736px){
-    .card{
+@media (max-width: 480px) {
+    .recommended_items{
+        flex-direction:column;
+    }
+    .card-post{
+        margin-top: 10rem;
         padding:2.5rem;
         flex-direction:column;
     }

@@ -11,7 +11,7 @@
           <input type="email" name="email" class="form-control" #email="ngModel" [(ngModel)]="administrator.email"
             required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
 
-          <small *ngIf="!email.valid && email.touched" class="invalid-feedback d-block">
+          <small *ngIf="!email.valid && email.touched" class="invalid-feedback d-block text-danger">
             El correo no es válido
           </small>
         </div>
@@ -21,12 +21,12 @@
           <input type="password" name="password" class="form-control" #password="ngModel"
             [(ngModel)]="administrator.password" required />
 
-          <small *ngIf="!password.valid && password.touched" class="invalid-feedback d-block">
+          <small *ngIf="!password.valid && password.touched" class="invalid-feedback d-block text-danger">
             La contraseña no es válida
           </small>
         </div>
 
-        <input type="submit" value="Identificarse" class="btn btn-success" [disabled]="loginForm.invalid" />
+        <input type="submit" value="Identificarse" class="btn " [disabled]="loginForm.invalid" />
       </form>
     </div>
   </div>

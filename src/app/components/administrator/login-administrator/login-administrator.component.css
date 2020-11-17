@@ -1,0 +1,20 @@
+
+ p{
+     margin-top: 10px;
+    text-transform: uppercase;
+    color: #859456
+    ;
+    font-weight: bold;
+}
+input:focus{
+    border-left: 8px solid #859456;
+    border-bottom:3px solid #859456;
+  }
+.btn{
+    background-color:#336064;
+    color: #e8ddb5;
+}
+.btn:hover{
+    background-color:#859456;
+    color: white;
+}

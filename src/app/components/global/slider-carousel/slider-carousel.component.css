@@ -1,0 +1,84 @@
+
+#slider {
+    padding-top: 4px;
+    margin-left: -15px;
+  }
+  .carousel-indicators{  bottom: 30px;}
+  .carousel-indicators li {
+    background: #C4C4BE;
+  }
+  
+  .carousel-indicators li.active {
+        background: #9F5832;
+  }
+  
+  .item {
+    padding-top: 10px;
+      height: 100%;
+      min-height: 500px;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      background-size: cover;
+  }
+  .carousel-caption {
+      bottom: 70px;
+  }
+
+  .girl {
+    margin-left: 0;
+  }
+  
+  .item h1 {
+    color: white;
+    font-family: abel;
+    font-size: 48px;
+    margin-top: 115px;
+  }
+  
+  .item h2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    margin-top: 10px;
+  }
+  
+  .item  p {
+      width: 75%;
+      margin: auto;
+      color: white;
+      font-size: 18px;
+      line-height: 1.9;
+  }
+  
+  .get {
+    background: #336064;
+    border: 0 none;
+    border-radius: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 23px;
+  }
+  
+  
+  .item button:hover {
+    background: #9F5832;
+  }
+  
+  .control-carousel {
+    position: absolute;
+    top: 50%;
+    font-size: 60px;
+    color: #C2C2C1;
+  }
+  
+  .control-carousel:hover{
+    color: #9F5832 ;
+  }
+  
+  .right {
+    right: 0;
+  }
