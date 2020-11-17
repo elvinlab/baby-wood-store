@@ -282,10 +282,9 @@ ul.sub-menu{
 /* XS Portrait */
 @media (max-width: 480px) {
 
-#slogan{
-	margin-left: 60px;
-	text-transform: uppercase;
-  }
+	.search_box{
+		margin-left: -70px;
+	  }
 .login-register.pull-right{
 	float: none !important;
 	text-align: center;
@@ -302,12 +301,12 @@ ul.sub-menu{
 
 .header_top .col-sm-6:first-child{
 	display: block;
-	float: none;
+	float: center;
 }
 
 .header_top .col-sm-6:last-child{
 	display: block;
-	float: none;
+	float: center;
 }
 
 .logo{
@@ -587,6 +586,7 @@ ul.sub-menu{
 		color: #e8ddb5;
 	  }
 	.modal-footer{margin-right: 50px;}
+
 
 /*Responsive Parte de Forgot password*/
 

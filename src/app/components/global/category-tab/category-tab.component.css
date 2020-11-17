@@ -1,47 +1,41 @@
-#carouselExampleFade{
-    overflow: hidden;
-}
-#carouselExampleFade .carousel-inner{
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 20s slider infinite;
-}
-#carouselExampleFade .carousel-inner .carousel-item{
-    width: 20%;
-    float: left;
+#myCarousel{
+    margin-bottom: 10px;
 }
 
-@keyframes slider{
-    0%{
-        left: 0;
-    }
-    20%{
-        left: 0;
-    }
-    25%{
-        left: -100%;
-    }
-    45%{
-        left: -100%;
-    }
-    50%{
-        left: -200%;
-    }
-    70%{
-        left: -200%;
-    }
-    75%{
-        left: -300%;
-    }
-    95%{
-        left: -300%;
-    }
-    100%{
-        left: -400%;
-    }
+.carousel-indicators{
+    margin-bottom: -10px;
 }
+.carousel-fade
+    .carousel-inner 
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    
+
+    .carousel-control {
+        z-index: 2;
+    }
+
 
 @media (max-width: 480px) {
 img{
