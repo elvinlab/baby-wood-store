@@ -22,6 +22,7 @@
   }
   .carousel-caption {
       bottom: 70px;
+      right: -650px;
   }
 
   .girl {
@@ -52,8 +53,7 @@
       line-height: 1.9;
   }
   
-  .get {
-    background: #336064;
+  .btn{
     border: 0 none;
     border-radius: 0;
     color: white;
@@ -62,10 +62,15 @@
     font-weight: 300;
     margin-top: 23px;
   }
-  
+  .btn-green {background-color:#859456;}
+  .btn-orange {background-color:#c96a3c;}
+  .btn-arena {background-color:#e8ddb5; color: #9c5233; font-weight: bold;}
+  .btn-blue {background-color:#336064;}
+  .btn-brown {background-color:#9c5233;}
   
   .item button:hover {
     background: #9F5832;
+    color: white;
   }
   
   .control-carousel {
@@ -82,3 +87,20 @@
   .right {
     right: 0;
   }
+
+  
+@media (max-width: 480px) {
+  .recommended_items{
+      flex-direction:column;
+  }
+  .card-post{
+      margin-top: 10rem;
+      padding:2.5rem;
+      flex-direction:column;
+  }
+  .card-image{
+      min-width: 30rem;
+      max-width: 30rem;
+      transform: translate(0, -8rem);
+  }
+}
