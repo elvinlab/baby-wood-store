@@ -5,7 +5,7 @@
     <app-header-middle></app-header-middle>
     <app-header-bottom></app-header-bottom>
   </header>
-  
+
     <div class="container">
       <router-outlet></router-outlet>
     </div>
@@ -15,7 +15,7 @@
 </div>
 
 <div *ngIf="identity && identity.role =='ROLE_ADMINISTRATOR'" >
-  
+
   <router-outlet></router-outlet>
 
 </div>

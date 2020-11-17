@@ -8,13 +8,16 @@
 #letra{
         height: 100px;
         width: 300px;
+        display:flex;
+        margin:0 auto;
+
 }
 .recommended_items {
     flex-direction:column;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #859456;
+  background-color: #e8ddb5;
   padding: 0 1.5rem;
 }
 img {
@@ -27,7 +30,7 @@ img {
   width: 100%;
   max-width: 98rem;
   padding: 5rem;
-  background-color: #e8ddb5;
+  background-color: #859456;
   box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
   display: flex;
   align-items: center;
@@ -66,17 +69,17 @@ img {
 .card-text1{
     margin-bottom: 3rem;
     font-size: 1.8rem;
-    color: #c96a3c;
+    color: #fff;
 }
 .card-text2{
     margin-bottom: 3rem;
     font-size: 1.8rem;
-    color: #859456;
+    color: #fff;
 }
 .card-text3{
     margin-bottom: 3rem;
     font-size: 1.8rem;
-    color:#336064;
+    color:#fff;
 
 }
 

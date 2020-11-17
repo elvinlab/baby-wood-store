@@ -1,106 +1,122 @@
-
 #slider {
-    padding-top: 4px;
-    margin-left: -15px;
-  }
-  .carousel-indicators{  bottom: 30px;}
-  .carousel-indicators li {
-    background: #C4C4BE;
-  }
-  
-  .carousel-indicators li.active {
-        background: #9F5832;
-  }
-  
-  .item {
-    padding-top: 10px;
-      height: 100%;
-      min-height: 500px;
-      background: no-repeat center center scroll;
-      -webkit-background-size: cover;
-      background-size: cover;
-  }
-  .carousel-caption {
-      bottom: 70px;
-      right: -650px;
-  }
+  padding-top: 4px;
+  margin-left: -15px;
+}
+.carousel-indicators {
+  bottom: 30px;
+}
+.carousel-indicators li {
+  background: #c4c4be;
+}
 
-  .girl {
-    margin-left: 0;
-  }
-  
-  .item h1 {
-    color: white;
-    font-family: abel;
-    font-size: 48px;
-    margin-top: 115px;
-  }
-  
-  .item h2 {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 22px;
-    margin-top: 10px;
-  }
-  
-  .item  p {
-      width: 75%;
-      margin: auto;
-      color: white;
-      font-size: 18px;
-      line-height: 1.9;
-  }
-  
-  .btn{
-    border: 0 none;
-    border-radius: 0;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: 23px;
-  }
-  .btn-green {background-color:#859456;}
-  .btn-orange {background-color:#c96a3c;}
-  .btn-arena {background-color:#e8ddb5; color: #9c5233; font-weight: bold;}
-  .btn-blue {background-color:#336064;}
-  .btn-brown {background-color:#9c5233;}
-  
-  .item button:hover {
-    background: #9F5832;
-    color: white;
-  }
-  
-  .control-carousel {
-    position: absolute;
-    top: 50%;
-    font-size: 60px;
-    color: #C2C2C1;
-  }
-  
-  .control-carousel:hover{
-    color: #9F5832 ;
-  }
-  
-  .right {
-    right: 0;
-  }
+.carousel-indicators li.active {
+  background: #9f5832;
+}
 
-  
+.item {
+  padding-top: 10px;
+  height: 100%;
+  min-height: 500px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.carousel-caption {
+  bottom: 70px;
+  right: -650px;
+}
+
+.girl {
+  margin-left: 0;
+}
+
+.item h1 {
+  color: white;
+  font-family: abel;
+  font-size: 48px;
+  margin-top: 115px;
+}
+
+.item h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  margin-top: 10px;
+}
+
+.item p {
+  width: 75%;
+  margin: auto;
+  color: white;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.btn {
+  border: 0 none;
+  border-radius: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 23px;
+}
+.btn-green {
+  background-color: #859456;
+  font-weight: bold;
+}
+.btn-orange {
+  background-color: #c96a3c;
+  font-weight: bold;
+}
+.btn-arena {
+  background-color: #e8ddb5;
+  color: #9c5233;
+  font-weight: bold;
+}
+.btn-blue {
+  background-color: #336064;
+  font-weight: bold;
+}
+.btn-brown {
+  background-color: #9c5233;
+  font-weight: bold;
+}
+
+.item button:hover {
+  background: #9f5832;
+  color: white;
+}
+
+.control-carousel {
+  position: absolute;
+  top: 50%;
+  font-size: 60px;
+  color: #c2c2c1;
+}
+
+.control-carousel:hover {
+  color: #9f5832;
+}
+
+.right {
+  right: 0;
+}
+
 @media (max-width: 480px) {
-  .recommended_items{
-      flex-direction:column;
+  .recommended_items {
+    flex-direction: column;
   }
-  .card-post{
-      margin-top: 10rem;
-      padding:2.5rem;
-      flex-direction:column;
+  .card-post {
+    margin-top: 10rem;
+    padding: 2.5rem;
+    flex-direction: column;
   }
-  .card-image{
-      min-width: 30rem;
-      max-width: 30rem;
-      transform: translate(0, -8rem);
+  .card-image {
+    min-width: 30rem;
+    max-width: 30rem;
+    transform: translate(0, -8rem);
   }
 }
