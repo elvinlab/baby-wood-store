@@ -34,11 +34,6 @@ export class RegisterClientComponent implements OnInit {
       '',
       'cel',
       'tel',
-      'country',
-      'province',
-      'city',
-      'postal_code',
-      'street_address',
       'ROLE_CLIENT'
     );
   }
@@ -64,11 +59,6 @@ export class RegisterClientComponent implements OnInit {
         response.id,
         'cel',
         'tel',
-        'country',
-        'province',
-        'city',
-        'postal_code',
-        'street_address',
         'ROLE_CLIENT'
       );
 
@@ -118,11 +108,6 @@ export class RegisterClientComponent implements OnInit {
         response.id,
         'cel',
         'tel',
-        'country',
-        'province',
-        'city',
-        'postal_code',
-        'street_address',
         'ROLE_CLIENT'
       );
 

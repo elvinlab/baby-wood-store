@@ -36,13 +36,8 @@ export class LoginClientComponent implements OnInit {
       '',
       '',
       '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
+      null,
+      null,
       'ROLE_CLIENT'
     );
   }
@@ -77,13 +72,8 @@ export class LoginClientComponent implements OnInit {
         '1996',
         response.email,
         response.id,
-        'cel',
-        'tel',
-        'country',
-        'province',
-        'city',
-        'postal_code',
-        'street_address',
+        null,
+        null,
         'ROLE_CLIENT'
       );
 
@@ -127,13 +117,8 @@ export class LoginClientComponent implements OnInit {
         '1996',
         response.email,
         response.id,
-        'cel',
-        'tel',
-        'country',
-        'province',
-        'city',
-        'postal_code',
-        'street_address',
+        null,
+        null,
         'ROLE_CLIENT'
       );
 

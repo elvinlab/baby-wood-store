@@ -31,11 +31,6 @@ export class ClientEditComponent implements OnInit {
       this.identity.password,
       this.identity.cel,
       this.identity.tel,
-      this.identity.country,
-      this.identity.province,
-      this.identity.city,
-      this.identity.postal_code,
-      this.identity.street_address,
       this.identity.role,
     );
   }
@@ -60,7 +55,7 @@ export class ClientEditComponent implements OnInit {
             this.client.gender = response.data.gender;
           }
 
-          /*        
+          /*
           if(response.data.birth_year){
 						this.client.birth_year = response.data.birth_year;
           }
@@ -76,26 +71,6 @@ export class ClientEditComponent implements OnInit {
 
           if (response.data.tel) {
             this.client.tel = response.data.tel;
-          }
-
-          if (response.data.country) {
-            this.client.country = response.data.country;
-          }
-
-          if (response.data.province) {
-            this.client.province = response.data.province;
-          }
-
-          if (response.data.city) {
-            this.client.city = response.data.city;
-          }
-
-          if (response.data.postal_code) {
-            this.client.postal_code = response.data.city;
-          }
-
-          if (response.data.street_address) {
-            this.client.street_address = response.data.street_address;
           }
 
           this.identity = this.client;
