@@ -1,5 +1,5 @@
 <form class="form-horizontal" role="form"  #clientEditForm="ngForm" (ngSubmit)="onSubmit()">
-
+  <h1>Informacion personal:</h1>
   <div class="form-group">
     <label for="name" class="col-sm-2 control-label">Nombre</label>
     <div class="col-sm-10">
@@ -67,46 +67,6 @@
     <label for="tel" class="col-sm-2 control-label">Telefono de casa</label>
     <div class="col-sm-10">
       <input type="tel" class="form-control" id="tel" placeholder="Telefono de casa" name="tel" [(ngModel)]="client.tel">
-    </div>
-  </div>
-
-  <h1>Informacion de envio:</h1>
-
-  <div class="form-group">
-    <label for="country" class="col-sm-2 control-label">Pais</label>
-    <div class="col-sm-10">
-      <input type="country" class="form-control" id="country" placeholder="Pais" name="country" [(ngModel)]="client.country">
-    </div>
-  </div>
-
-
-  <div class="form-group">
-    <label for="province" class="col-sm-2 control-label">Provincia</label>
-    <div class="col-sm-10">
-      <input type="province" class="form-control" id="province" placeholder="Provincia" name="province" [(ngModel)]="client.province">
-    </div>
-  </div>
-
-  <div class="form-group">
-    <label for="city" class="col-sm-2 control-label">Ciudad</label>
-    <div class="col-sm-10">
-      <input type="city" class="form-control" id="city" placeholder="Ciudad" name="city" [(ngModel)]="client.city">
-    </div>
-  </div>
-
-
-  <div class="form-group">
-    <label for="postal_code" class="col-sm-2 control-label">Codigo Postal</label >
-    <div class="col-sm-10">
-      <input type="postal_code" class="form-control" id="postal_code" placeholder="Codigo Postal" name="postal_code" [(ngModel)]="client.postal_code">
-    </div>
-  </div>
-
-
-  <div class="form-group">
-    <label for="street_address" class="col-sm-2 control-label">Direccion Exacta</label>
-    <div class="col-sm-10">
-      <input type="street_address" class="form-control" id="street_address" placeholder="Direccion Exacta" name="street_address" [(ngModel)]="client.street_address">
     </div>
   </div>
 
