@@ -29,6 +29,7 @@ import { RegisterClientComponent } from './components/client/register-client/reg
 import { ChangePasswordComponent } from './components/global/change-password/change-password.component';
 import { ChangePasswordRequestComponent } from './components/global/change-password-request/change-password-request.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InformationCompanyComponent } from './components/global/information-company/information-company.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RegisterClientComponent,
     ChangePasswordComponent,
     ChangePasswordRequestComponent,
+    InformationCompanyComponent,
   ],
   imports: [
     BrowserModule,

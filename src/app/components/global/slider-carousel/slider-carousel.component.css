@@ -108,17 +108,20 @@
 }
 
 @media (max-width: 480px) {
-  .recommended_items {
-    flex-direction: column;
+  .item {
+    min-height: 250px;
+   
   }
-  .card-post {
-    margin-top: 10rem;
-    padding: 2.5rem;
-    flex-direction: column;
+  .item img{
+    height: 170px;
+    width: auto;
   }
-  .card-image {
-    min-width: 30rem;
-    max-width: 30rem;
-    transform: translate(0, -8rem);
+  .btn {
+    margin-bottom: -70px;
+    float: left;
+  }
+  .carousel-indicators {
+    bottom: 30px;
+    margin-left: 13px;
   }
   }

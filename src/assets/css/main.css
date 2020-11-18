@@ -274,13 +274,19 @@ ul.sub-menu {
   background: #e7ddb4;
 }
 
-.address img {
-  width: 100%;
+
+.footer-widget .container {
+  border-top: 1px solid #ffffff;
 }
+.footer-widget .container img{
+  height: 500px;
+  width: 1900px;
+  margin-left: -383px;
+}
+/*Footer
 #contac_info {
   padding: 0%;
 }
-
 .footer-widget .container {
   border-top: 1px solid #ffffff;
   padding-top: 15px;
@@ -314,7 +320,9 @@ ul.sub-menu {
 .single-widget ul li a:hover {
   background: none;
   color: #ffffff;
-}
+
+
+*/
 
 .footer-bottom {
   background: #ca693c;
