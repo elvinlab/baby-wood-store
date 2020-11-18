@@ -271,7 +271,7 @@ ul.sub-menu {
 **************************/
 
 #footer {
-  background: #e7ddb4;
+  background: #DDD3A7;
 }
 
 
@@ -286,7 +286,7 @@ ul.sub-menu {
 }
 
 .single-widget h2 {
-  color: #9f5137;
+  color: #305756;
   font-family:"Gotham Rounded";
   font-size: 18px;
   font-weight: 500;
@@ -316,7 +316,7 @@ ul.sub-menu {
 }
 
 .footer-bottom {
-  background: #ca693c;
+  background: #305756;
   padding-top: 4px;
 }
 

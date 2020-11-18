@@ -1,16 +1,13 @@
-#myCarousel{
-    margin-bottom: 10px;
-}
 
 .carousel-indicators{
     margin-bottom: -10px;
 }
 .carousel-fade
-    .carousel-inner 
+    .carousel-inner
         .item {
             transition-property: opacity;
         }
-        
+
         .item,
         .active.left,
         .active.right {
@@ -30,7 +27,7 @@
             left: 0;
             transform: translate3d(0, 0, 0);
         }
-    
+
 
     .carousel-control {
         z-index: 2;
@@ -39,7 +36,11 @@
 
 @media (max-width: 480px) {
 img{
-    width:445px;
-    height: 315px;;
+    width:380px;
+    height: 315px;
+}
+#myCarousel{
+  width:380px;
+  height: 315px;
 }
 }
