@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/gotham-rounded');
+@import url('https://fonts.cdnfonts.com/css/gotham-rounded');
 
 #slider {
   padding-top: 4px;
@@ -110,7 +110,7 @@
 @media (max-width: 480px) {
   .item {
     min-height: 250px;
-   
+
   }
   .item img{
     height: 170px;
