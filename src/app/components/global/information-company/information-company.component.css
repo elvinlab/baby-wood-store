@@ -9,11 +9,12 @@
     background-color: white;
 }
 .about-section{
-    background: url(../../../../assets/images/home/recommend3.jpg) no-repeat left top;
+    background: url("https://source.unsplash.com/random/350x350?sig=55") no-repeat left top;
     background-size:55%;
   background-color: white;
   overflow: hidden;
   padding: 100px 0;
+  margin-top: 30px;
 }
 .inner-container{
 width: 55%;
@@ -24,11 +25,12 @@ padding: 80px;
 
 
 .about-section2{
-    background: url(../../../../assets/images/home/gallery1.jpg) no-repeat right top;
+    background: url("https://source.unsplash.com/random/350x350?sig=77") no-repeat right top;
     background-size:55%;
   background-color: white;
   overflow: hidden;
   padding: 100px 0;
+  margin-top: 30px;
 }
 .inner-container2{
 width: 55%;

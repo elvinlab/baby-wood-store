@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "baby-wood-store": {
+    "guana-muebles-store": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/baby-wood-store",
+            "outputPath": "dist/guana-muebles-store",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "baby-wood-store:build"
+            "browserTarget": "guana-muebles-store:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "baby-wood-store:build:production"
+              "browserTarget": "guana-muebles-store:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "baby-wood-store:build"
+            "browserTarget": "guana-muebles-store:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "baby-wood-store:serve"
+            "devServerTarget": "guana-muebles-store:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "baby-wood-store:serve:production"
+              "devServerTarget": "guana-muebles-store:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "baby-wood-store"
+  "defaultProject": "guana-muebles-store"
 }

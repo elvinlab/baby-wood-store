@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/guana-muebles-store",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

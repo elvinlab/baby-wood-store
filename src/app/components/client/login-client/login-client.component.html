@@ -14,10 +14,7 @@
 
       <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
         <div class="modal-header">
-          <img
-            src="assets/images/home/logo2.png"
-            alt="main image"
-          />
+       <span>Guana Muebles</span>
         </div>
 
         <div class="form-group">
@@ -28,7 +25,6 @@
               type="email"
               class="form-control"
               name="email"
-              placeholder="  Correo Electronico"
               #email="ngModel"
               [(ngModel)]="client.email"
               required
@@ -46,7 +42,6 @@
               type="password"
               name="password"
               class="form-control"
-              placeholder="  Contraseña"
               #password="ngModel"
               [(ngModel)]="client.password"
               required
@@ -80,10 +75,10 @@
           <p class="social-text">Ingresa con una red social</p>
           <div class="social-media">
             <button class="social-icon" (click)="signInWithFB()">
-              <img src="../../../../assets/images/icon/facebook.png" />
+              <span>F</span>
             </button>
             <button class="social-icon" (click)="signInWithGoogle()">
-              <img src="../../../../assets/images/icon/google.png" />
+              <span>G</span>
             </button>
           </div>
         </div>

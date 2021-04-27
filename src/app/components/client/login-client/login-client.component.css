@@ -49,7 +49,6 @@
 		left:0;
 		right:0;
 		margin:auto;
-		background-image: url("../../../../assets/images/shop/fondo-log2.png");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -150,7 +149,6 @@
   }
 
 .modal-footer{
-	background-image: url("../../../../assets/images/shop/fondo-log.png");
 	background-position: bottom left;
 	background-size: 100px 100px;
 	background-repeat: no-repeat;
